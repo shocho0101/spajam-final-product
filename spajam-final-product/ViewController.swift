@@ -23,7 +23,7 @@ class ViewController: UIViewController {
     }
     
     override func loadView() {
-        guard let view = UINib(nibName: ViewController.className, bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView else {
+        guard let view = UINib(nibName: Self.className, bundle: nil).instantiate(withOwner: self, options: nil).first as? UIView else {
             return
         }
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
