@@ -33,6 +33,7 @@ targets:
     platform: iOS
     sources:
       - *productName
+      - Shared
     settings:
       base: 
         MARKETING_VERSION: 1.0.0
