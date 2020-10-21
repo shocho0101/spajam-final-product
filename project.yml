@@ -1,0 +1,52 @@
+name: &productName spajam-final-product
+
+options: 
+  bundleIdPrefix: com.litech
+  deploymentTarget:
+    iOS: 14.0
+  deploymentLanguage: ja
+  xcodeVersion: "12.0"
+  carthageExecutablePath: mint run Carthage/Carthage
+
+packages:
+  RxSwift:
+    url: https://github.com/ReactiveX/RxSwift
+    from: 5.1.1
+  Action: 
+    url: https://github.com/RxSwiftCommunity/Action
+    from: 4.0.1
+  RxAlamofire:
+    url: https://github.com/RxSwiftCommunity/RxAlamofire
+    from: 5.6.2
+  PKHUD:
+    url: https://github.com/pkluz/PKHUD
+    from: 5.4.0
+  Kingfisher:
+    url: https://github.com/onevcat/Kingfisher
+    from: 5.15.6
+  realm-cocoa:
+    url: https://github.com/realm/realm-cocoa
+    from: 10.0.0  
+
+targets:
+  *productName:
+    type: application
+    platform: iOS
+    sources:
+      - *productName
+    settings:
+      base: 
+        MARKETING_VERSION: 1.0.0
+        CURRENT_PROJECT_VERSION: 1
+        INFOPLIST_FILE: spajam-final-product/Info.plist
+        OTHER_LDFLAGS: $(inherited) $(OTHER_LDFLAGS) -ObjC
+        OTHER_SWIFT_FLAGS: $(inherited)
+        DEVELOPMENT_LANGUAGE: jp
+    dependencies: 
+      - package: RxSwift
+      - package: Action     
+      - package: RxAlamofire
+      - package: PKHUD
+      - package: Kingfisher
+      - package: realm-cocoa
+        product: RealmSwift

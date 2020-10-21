@@ -1,0 +1,24 @@
+name: Build Check
+
+on: [push] 
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v1
+    - uses: maxim-lobanov/setup-xcode@v1.1
+      with:
+        xcode-version: '12.0'    
+    - name: Cache Mint packages
+      uses: actions/cache@v2
+      with:
+        path: mint
+        key: ${{ runner.os }}-mint-${{ hashFiles('**/Mintfile') }}
+        restore-keys: ${{ runner.os }}-mint-
+    - name: Make script excutable
+      run: chmod +x ./scripts/bootstrap.sh
+    - name: Generate Xcode project with bootstrap
+      run: ./scripts/bootstrap.sh
+    - name: Build
+      run: xcodebuild -sdk iphonesimulator -scheme spajam-final-product -configuration Debug build
