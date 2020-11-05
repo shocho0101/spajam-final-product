@@ -1,0 +1,14 @@
+name: Build Check
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: macos-latest
+    steps:
+    - uses: actions/checkout@v1 
+    - uses: maxim-lobanov/setup-xcode@v1.1
+      with:
+        xcode-version: latest-stable
+    - name: Build 
+      run: xcodebuild -sdk iphonesimulator -configuration Debug build
