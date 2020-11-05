@@ -6,12 +6,23 @@
 //
 
 import UIKit
+import RxSwift
+import RxMoya
+import Moya
 
 class ViewController: UIViewController {
+    
+    let action = DataGateway.getAction(ZipCodeDataAction.self)
+    let bag = DisposeBag()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        action.execute(1010001)
+            .subscribe(onNext: { zipCode in
+                print(zipCode)
+            }, onError: { error in
+                print(error)
+            }).disposed(by: bag)
     }
 
 
