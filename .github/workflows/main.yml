@@ -11,4 +11,4 @@ jobs:
       with:
         xcode-version: latest-stable
     - name: Build 
-      run: xcodebuild -sdk iphonesimulator -configuration Debug build
+      run: xcodebuild -sdk iphonesimulator -scheme spajam-final-product
