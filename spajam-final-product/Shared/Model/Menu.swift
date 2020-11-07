@@ -12,3 +12,9 @@ struct Menu: Codable {
     let price: Int
     let menuName: String
 }
+
+extension Menu: ModelMockable {
+    static var mock: Menu {
+        return .init(menuId: "fffff", price: 999, menuName: "ごはーん")
+    }
+}
