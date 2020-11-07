@@ -7,6 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA286BF52556BDE900FADD71 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286BF32556BDE900FADD71 /* MenuTableViewCell.swift */; };
+		CA286BF62556BDE900FADD71 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA286BF42556BDE900FADD71 /* MenuTableViewCell.xib */; };
+		CA286BFD2556C15100FADD71 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CA286BFC2556C15100FADD71 /* Kingfisher */; };
+		CA286C012556C16100FADD71 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = CA286C002556C16100FADD71 /* Kingfisher */; };
+		CA286C042556C17A00FADD71 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286BF32556BDE900FADD71 /* MenuTableViewCell.swift */; };
+		CA286C072556C17C00FADD71 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA286BF42556BDE900FADD71 /* MenuTableViewCell.xib */; };
+		CA286C0B2556C38800FADD71 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286C0A2556C38800FADD71 /* MenuListViewModel.swift */; };
+		CA286C0F2556C4BD00FADD71 /* GetShopDataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286C0E2556C4BD00FADD71 /* GetShopDataGatewayAction.swift */; };
+		CA286C122556C76500FADD71 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286C0A2556C38800FADD71 /* MenuListViewModel.swift */; };
+		CA286C152556C7B500FADD71 /* GetShopDataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286C0E2556C4BD00FADD71 /* GetShopDataGatewayAction.swift */; };
 		CA4185B9255691B2006433B8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185B8255691B2006433B8 /* RxSwift */; };
 		CA4185BB255691B2006433B8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185BA255691B2006433B8 /* RxCocoa */; };
 		CA4185BD255691B2006433B8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185BC255691B2006433B8 /* RxRelay */; };
@@ -92,6 +102,10 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		CA286BF32556BDE900FADD71 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		CA286BF42556BDE900FADD71 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
+		CA286C0A2556C38800FADD71 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
+		CA286C0E2556C4BD00FADD71 /* GetShopDataGatewayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShopDataGatewayAction.swift; sourceTree = "<group>"; };
 		CA4185E125569F37006433B8 /* KaikaiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaikaiAPI.swift; sourceTree = "<group>"; };
 		CA4185E82556A090006433B8 /* GetShopsDataGatewayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShopsDataGatewayAction.swift; sourceTree = "<group>"; };
 		CA41861A2556B2C2006433B8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -142,6 +156,7 @@
 				CA4185BB255691B2006433B8 /* RxCocoa in Frameworks */,
 				CA4185CB255695E8006433B8 /* Moya in Frameworks */,
 				CA4185B9255691B2006433B8 /* RxSwift in Frameworks */,
+				CA286BFD2556C15100FADD71 /* Kingfisher in Frameworks */,
 				CA4185CD255695E8006433B8 /* RxMoya in Frameworks */,
 				CA4185BD255691B2006433B8 /* RxRelay in Frameworks */,
 				D372BD2A2556DC9500D4912B /* Pageboy in Frameworks */,
@@ -157,6 +172,7 @@
 				D300636725569F5000944A15 /* Action in Frameworks */,
 				D3527A322556B58200836361 /* RxSwift in Frameworks */,
 				D300636325569F5000944A15 /* RxRelay in Frameworks */,
+				CA286C012556C16100FADD71 /* Kingfisher in Frameworks */,
 				D300636925569F5000944A15 /* Moya in Frameworks */,
 				D300636125569F5000944A15 /* RxCocoa in Frameworks */,
 				D372BD2E2556DC9D00D4912B /* Pageboy in Frameworks */,
@@ -167,6 +183,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		CA286BF12556BDC900FADD71 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				CA286BF22556BDD400FADD71 /* MenuCell */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		CA286BF22556BDD400FADD71 /* MenuCell */ = {
+			isa = PBXGroup;
+			children = (
+				CA286BF32556BDE900FADD71 /* MenuTableViewCell.swift */,
+				CA286BF42556BDE900FADD71 /* MenuTableViewCell.xib */,
+			);
+			path = MenuCell;
+			sourceTree = "<group>";
+		};
 		CA4185D225569EA0006433B8 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -179,6 +212,7 @@
 			isa = PBXGroup;
 			children = (
 				CA4185E82556A090006433B8 /* GetShopsDataGatewayAction.swift */,
+				CA286C0E2556C4BD00FADD71 /* GetShopDataGatewayAction.swift */,
 			);
 			path = DataGateway;
 			sourceTree = "<group>";
@@ -219,6 +253,7 @@
 		D31401D225567CB300C30923 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CA286BF12556BDC900FADD71 /* Views */,
 				D3527A522556B7BE00836361 /* ViewControllers */,
 				D38F77FE25569B1400E1B26E /* Pay */,
 				CAAFB731253B131900B26DE2 /* Assets.xcassets */,
@@ -267,6 +302,7 @@
 			children = (
 				D3527A542556B7BE00836361 /* MenuListViewController.xib */,
 				D3527A552556B7BE00836361 /* MenuListViewController.swift */,
+				CA286C0A2556C38800FADD71 /* MenuListViewModel.swift */,
 			);
 			path = MenuList;
 			sourceTree = "<group>";
@@ -368,6 +404,7 @@
 				CA4185CA255695E8006433B8 /* Moya */,
 				CA4185CC255695E8006433B8 /* RxMoya */,
 				D372BD292556DC9500D4912B /* Pageboy */,
+				CA286BFC2556C15100FADD71 /* Kingfisher */,
 			);
 			productName = "spajam-final-product";
 			productReference = CAAFB725253B131600B26DE2 /* spajam-final-product.app */;
@@ -391,6 +428,7 @@
 				CA4185DD25569EE4006433B8 /* RxMoya */,
 				D3527A4E2556B79800836361 /* PKHUD */,
 				D372BD2D2556DC9D00D4912B /* Pageboy */,
+				CA286C002556C16100FADD71 /* Kingfisher */,
 			);
 			productName = "spajam-final-product-clip";
 			productReference = D3816B652556845A0069BF53 /* spajam-final-product-clip.app */;
@@ -428,6 +466,7 @@
 				CA4185C4255695CB006433B8 /* XCRemoteSwiftPackageReference "Action" */,
 				CA4185C9255695E8006433B8 /* XCRemoteSwiftPackageReference "Moya" */,
 				D372BD282556DC9500D4912B /* XCRemoteSwiftPackageReference "Pageboy" */,
+				CA286BFB2556C15100FADD71 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = CAAFB726253B131600B26DE2 /* Products */;
 			projectDirPath = "";
@@ -448,6 +487,7 @@
 				CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */,
 				D3527A622556B7BE00836361 /* MapViewController.xib in Resources */,
 				D3D144C82556D6F30062E3BB /* GuideChildViewController.xib in Resources */,
+				CA286BF62556BDE900FADD71 /* MenuTableViewCell.xib in Resources */,
 				D3527A5C2556B7BE00836361 /* MenuListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -459,6 +499,7 @@
 				D3527A652556B7BE00836361 /* MenuViewController.xib in Resources */,
 				D3816B81255684D50069BF53 /* Assets.xcassets in Resources */,
 				D3527A632556B7BE00836361 /* MapViewController.xib in Resources */,
+				CA286C072556C17C00FADD71 /* MenuTableViewCell.xib in Resources */,
 				D3527A5D2556B7BE00836361 /* MenuListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -472,6 +513,7 @@
 			files = (
 				D3527A602556B7BE00836361 /* MapViewController.swift in Sources */,
 				D3D144C72556D6F30062E3BB /* GuideChildViewController.swift in Sources */,
+				CA286C0F2556C4BD00FADD71 /* GetShopDataGatewayAction.swift in Sources */,
 				CA4185E92556A090006433B8 /* GetShopsDataGatewayAction.swift in Sources */,
 				D379165B25568F2F0015BE4F /* Menu.swift in Sources */,
 				D3527A6E2556B83400836361 /* DataGatewayAction.swift in Sources */,
@@ -487,6 +529,8 @@
 				CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */,
 				D341EA3F2556C6E60009B25F /* CircleBorderButton.swift in Sources */,
 				D3527A5E2556B7BE00836361 /* MenuListViewController.swift in Sources */,
+				CA286BF52556BDE900FADD71 /* MenuTableViewCell.swift in Sources */,
+				CA286C0B2556C38800FADD71 /* MenuListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -495,6 +539,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3527A712556B83400836361 /* DataGatewayAction.swift in Sources */,
+				CA286C152556C7B500FADD71 /* GetShopDataGatewayAction.swift in Sources */,
 				D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */,
 				D38F780A25569B2400E1B26E /* Menu.swift in Sources */,
 				D3527A612556B7BE00836361 /* MapViewController.swift in Sources */,
@@ -509,6 +554,8 @@
 				D3527A7D2556BA2000836361 /* KaikaiAPI.swift in Sources */,
 				D341EA402556C6E60009B25F /* CircleBorderButton.swift in Sources */,
 				D3527A7A2556B83A00836361 /* GetShopsDataGatewayAction.swift in Sources */,
+				CA286C042556C17A00FADD71 /* MenuTableViewCell.swift in Sources */,
+				CA286C122556C76500FADD71 /* MenuListViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,6 +830,14 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CA286BFB2556C15100FADD71 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.15.7;
+			};
+		};
 		CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
@@ -826,6 +881,16 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CA286BFC2556C15100FADD71 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA286BFB2556C15100FADD71 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+		CA286C002556C16100FADD71 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA286BFB2556C15100FADD71 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
 		CA4185B8255691B2006433B8 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */;

@@ -8,13 +8,14 @@
 import Foundation
 
 struct Menu: Codable {
-    let menuId: String
+    let menuId: Int
     let price: Int
     let menuName: String
+    let imageUrl: String
 }
 
 extension Menu: ModelMockable {
     static var mock: Menu {
-        return .init(menuId: "fffff", price: 999, menuName: "ごはーん")
+        return .init(menuId: 1, price: 999, menuName: "ごはーん", imageUrl: "https://placehold.jp/150x150.png")
     }
 }
