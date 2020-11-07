@@ -11,7 +11,7 @@ import RxCocoa
 
 extension MenuListViewController {
     class ViewModel {
-        let getShopAction = DataGateway.getAction(GetShopDataGatewayAction.self, useMock: true)
+        let getShopAction = DataGateway.getAction(GetShopDataGatewayAction.self, useMock: false)
         let disposeBag = DisposeBag()
         
         let viewDidLoad = PublishRelay<Void>()
