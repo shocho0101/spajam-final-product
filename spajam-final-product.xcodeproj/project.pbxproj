@@ -34,6 +34,10 @@
 		D3816B792556845B0069BF53 /* spajam-final-product-clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = D3816B652556845A0069BF53 /* spajam-final-product-clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D3816B81255684D50069BF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
 		D3816BA5255686970069BF53 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = D3816BA4255686970069BF53 /* PKHUD */; };
+		D3816BA9255687B80069BF53 /* PayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816BA8255687B80069BF53 /* PayService.swift */; };
+		D3816BAC255689060069BF53 /* PayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816BA8255687B80069BF53 /* PayService.swift */; };
+		D3816BB32556890F0069BF53 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC4BB22554320E00EC056A /* AppError.swift */; };
+		D3816BB6255689150069BF53 /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,7 @@
 		D3816B752556845B0069BF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3816B762556845B0069BF53 /* spajam_final_product_clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = spajam_final_product_clip.entitlements; sourceTree = "<group>"; };
 		D3816B84255684FA0069BF53 /* spajam-final-product.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "spajam-final-product.entitlements"; sourceTree = "<group>"; };
+		D3816BA8255687B80069BF53 /* PayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -175,6 +180,14 @@
 				D379165E25568F710015BE4F /* Shop.swift */,
 			);
 			path = Model;
+			sourceTree = "<group>";
+		};
+		D3816B5D25567E950069BF53 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				D3816BA8255687B80069BF53 /* PayService.swift */,
+			);
+			path = Pay;
 			sourceTree = "<group>";
 		};
 		D3816B662556845A0069BF53 /* spajam-final-product-clip */ = {
@@ -327,6 +340,7 @@
 				D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */,
 				D379165F25568F710015BE4F /* Shop.swift in Sources */,
 				CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */,
+				D3816BA9255687B80069BF53 /* PayService.swift in Sources */,
 				CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -337,7 +351,10 @@
 			files = (
 				D3816B6C2556845A0069BF53 /* ViewController.swift in Sources */,
 				D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */,
+				D3816BAC255689060069BF53 /* PayService.swift in Sources */,
 				D3816B6A2556845A0069BF53 /* SceneDelegate.swift in Sources */,
+				D3816BB6255689150069BF53 /* ModelMockable.swift in Sources */,
+				D3816BB32556890F0069BF53 /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
