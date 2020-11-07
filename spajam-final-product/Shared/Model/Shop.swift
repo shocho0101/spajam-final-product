@@ -7,20 +7,12 @@
 
 import Foundation
 
-struct Shop {
-    
-    struct Menu: Codable {
-        let shopId: String
-        let shopName: String
-        let menus: [Menu]
-    }
-    
-    struct Map: Codable {
-        let shopId: String
-        let shopName: String
-        let latitude: Double
-        let longitude: Double
-        let capacity: Int
-        let currentPopulation: Int
-    }
+struct Shop: Codable {
+    let shopId: String
+    let shopName: String
+    let menus: [Menu]
+    let latitude: Double
+    let longitude: Double
+    let capacity: Int
+    let currentPopulation: Int
 }
