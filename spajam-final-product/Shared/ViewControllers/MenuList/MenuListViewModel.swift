@@ -34,11 +34,21 @@ extension MenuListViewController {
             
         }
         
+        var shop: Driver<Shop> {
+            return getShopAction.elements
+                .asDriver(onErrorDriveWith: .empty())
+        }
+        
         var menus: Driver<[(menu: Menu, count: Int)]> {
             return Observable.combineLatest(getShopAction.elements.map { $0.menus }, cartDictionary)
                 .map { menuArray, cart in
                     return menuArray.map { menu in (menu, cart[menu.menuId] ?? 0) }
                 }.asDriver(onErrorDriveWith: .empty())
+        }
+        
+        var price: Driver<Int> {
+            return menus.map { tupleArray in tupleArray.reduce(into: 0) { $0 += $1.menu.price * $1.count}}
+                .asSharedSequence(onErrorDriveWith: .empty())
         }
         
         var showMenuViewController: Driver<(Menu, Int)> {
@@ -47,9 +57,12 @@ extension MenuListViewController {
             }.asDriver(onErrorDriveWith: .empty())
         }
         
-        var startApplePay: Driver<[(menu: Menu, count: Int)]> {
+        var startApplePay: Driver<([(menu: Menu, count: Int)], Shop)> {
             return purchaseButtonTapped
                 .withLatestFrom(menus)
+                .withLatestFrom(shop, resultSelector: { menu, shop in
+                    return (menu, shop)
+                })
                 .asDriver(onErrorDriveWith: .empty())
         }
     }

@@ -18,9 +18,12 @@ class MenuListViewController: UIViewController {
     @IBOutlet var tableView: UITableView!
     @IBOutlet var bottomBackgroundView: UIView!
     @IBOutlet var purchaseButton: UIButton!
+    @IBOutlet var priceLabel: UILabel!
     
     let viewModel: ViewModel
     let disposeBag = DisposeBag()
+    
+    var payService: PayService?
     
     
     init(_ input: Input) {
@@ -61,11 +64,12 @@ class MenuListViewController: UIViewController {
             menuViewController.addCart.bind(to: self.viewModel.addCart).disposed(by: self.disposeBag)
             self.navigationController?.pushViewController(menuViewController, animated: true)
         }).disposed(by: disposeBag)
-        viewModel.startApplePay.drive(onNext: { [weak self] tupleArray in
+        viewModel.startApplePay.drive(onNext: { [weak self] tupleArray, shop in
             guard let self = self else { return }
-            let payService = PayService()
-            payService.showPaymentViewController(on: self, items: tupleArray)
+            self.payService = PayService()
+            self.payService?.showPaymentViewController(on: self, items: tupleArray, shop: shop)
         }).disposed(by: disposeBag)
+        viewModel.price.map { "¥\($0)"}.drive(priceLabel.rx.text).disposed(by: disposeBag)
         
         tableView.rx.itemSelected.map { $0.row }.bind(to: viewModel.itemSelected).disposed(by: disposeBag)
         tableView.rx.itemSelected.subscribe(onNext: { [tableView] in tableView?.deselectRow(at: $0, animated: true)}).disposed(by: disposeBag)

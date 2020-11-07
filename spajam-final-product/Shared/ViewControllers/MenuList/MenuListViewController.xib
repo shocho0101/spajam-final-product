@@ -11,6 +11,7 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MenuListViewController" customModule="spajam_final_product" customModuleProvider="target">
             <connections>
                 <outlet property="bottomBackgroundView" destination="Fbw-l2-hxD" id="8mp-3F-QYC"/>
+                <outlet property="priceLabel" destination="LB9-5d-cn1" id="woB-Bd-3GR"/>
                 <outlet property="purchaseButton" destination="67r-ft-OjT" id="IlQ-bU-aaf"/>
                 <outlet property="tableView" destination="Hdt-dK-Xy5" id="VaY-Ye-CnN"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
