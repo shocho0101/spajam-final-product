@@ -15,16 +15,6 @@
 		CA4185CD255695E8006433B8 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185CC255695E8006433B8 /* RxMoya */; };
 		CA4185E225569F37006433B8 /* KaikaiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4185E125569F37006433B8 /* KaikaiAPI.swift */; };
 		CA4185E92556A090006433B8 /* GetShopsDataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4185E82556A090006433B8 /* GetShopsDataGatewayAction.swift */; };
-		CA41861C2556B2C2006433B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41861A2556B2C2006433B8 /* MapViewController.swift */; };
-		CA41861D2556B2C2006433B8 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA41861B2556B2C2006433B8 /* MapViewController.xib */; };
-		CA4186252556B2DB006433B8 /* MenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4186232556B2DB006433B8 /* MenuListViewController.swift */; };
-		CA4186262556B2DB006433B8 /* MenuListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4186242556B2DB006433B8 /* MenuListViewController.xib */; };
-		CA41862C2556B2EF006433B8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41862A2556B2EF006433B8 /* MenuViewController.swift */; };
-		CA41862D2556B2EF006433B8 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA41862B2556B2EF006433B8 /* MenuViewController.xib */; };
-		CA4186362556B3E5006433B8 /* MenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4186232556B2DB006433B8 /* MenuListViewController.swift */; };
-		CA4186392556B3E9006433B8 /* MenuListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4186242556B2DB006433B8 /* MenuListViewController.xib */; };
-		CA41863C2556B3EC006433B8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41862A2556B2EF006433B8 /* MenuViewController.swift */; };
-		CA41863F2556B3EF006433B8 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA41862B2556B2EF006433B8 /* MenuViewController.xib */; };
 		CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB728253B131600B26DE2 /* AppDelegate.swift */; };
 		CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB72A253B131600B26DE2 /* SceneDelegate.swift */; };
 		CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
@@ -60,8 +50,6 @@
 		D379165F25568F710015BE4F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165E25568F710015BE4F /* Shop.swift */; };
 		D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B672556845A0069BF53 /* AppDelegate.swift */; };
 		D3816B6A2556845A0069BF53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B692556845A0069BF53 /* SceneDelegate.swift */; };
-		D3816B6C2556845A0069BF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B6B2556845A0069BF53 /* ViewController.swift */; };
-		D3816B742556845B0069BF53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3816B722556845B0069BF53 /* LaunchScreen.storyboard */; };
 		D3816B792556845B0069BF53 /* spajam-final-product-clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = D3816B652556845A0069BF53 /* spajam-final-product-clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D3816B81255684D50069BF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
 		D3816BB32556890F0069BF53 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC4BB22554320E00EC056A /* AppError.swift */; };
@@ -475,7 +463,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3527A712556B83400836361 /* DataGatewayAction.swift in Sources */,
-				D3816B6C2556845A0069BF53 /* ViewController.swift in Sources */,
 				D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */,
 				D38F780A25569B2400E1B26E /* Menu.swift in Sources */,
 				D3527A612556B7BE00836361 /* MapViewController.swift in Sources */,
@@ -489,7 +476,6 @@
 				D3816BB32556890F0069BF53 /* AppError.swift in Sources */,
 				D3527A7D2556BA2000836361 /* KaikaiAPI.swift in Sources */,
 				D3527A7A2556B83A00836361 /* GetShopsDataGatewayAction.swift in Sources */,
-				CA4186362556B3E5006433B8 /* MenuListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
