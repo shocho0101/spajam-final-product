@@ -58,6 +58,9 @@
 		D3527A772556B83700836361 /* DataGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D425567CB300C30923 /* DataGateway.swift */; };
 		D3527A7A2556B83A00836361 /* GetShopsDataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4185E82556A090006433B8 /* GetShopsDataGatewayAction.swift */; };
 		D3527A7D2556BA2000836361 /* KaikaiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4185E125569F37006433B8 /* KaikaiAPI.swift */; };
+		D372BD2A2556DC9500D4912B /* Pageboy in Frameworks */ = {isa = PBXBuildFile; productRef = D372BD292556DC9500D4912B /* Pageboy */; };
+		D372BD2E2556DC9D00D4912B /* Pageboy in Frameworks */ = {isa = PBXBuildFile; productRef = D372BD2D2556DC9D00D4912B /* Pageboy */; };
+		D372BD342556DD1900D4912B /* GuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D372BD332556DD1900D4912B /* GuidePageViewController.swift */; };
 		D379165B25568F2F0015BE4F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165A25568F2F0015BE4F /* Menu.swift */; };
 		D379165F25568F710015BE4F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165E25568F710015BE4F /* Shop.swift */; };
 		D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B672556845A0069BF53 /* AppDelegate.swift */; };
@@ -70,6 +73,8 @@
 		D38F780925569B2400E1B26E /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165E25568F710015BE4F /* Shop.swift */; };
 		D38F780A25569B2400E1B26E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165A25568F2F0015BE4F /* Menu.swift */; };
 		D38F780B25569B2400E1B26E /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
+		D3D144C72556D6F30062E3BB /* GuideChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D144C52556D6F30062E3BB /* GuideChildViewController.swift */; };
+		D3D144C82556D6F30062E3BB /* GuideChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D144C62556D6F30062E3BB /* GuideChildViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -126,6 +131,7 @@
 		D3527A582556B7BE00836361 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
 		D3527A5A2556B7BE00836361 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
 		D3527A5B2556B7BE00836361 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
+		D372BD332556DD1900D4912B /* GuidePageViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuidePageViewController.swift; sourceTree = "<group>"; };
 		D379165A25568F2F0015BE4F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		D379165E25568F710015BE4F /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		D3816B652556845A0069BF53 /* spajam-final-product-clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spajam-final-product-clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -137,6 +143,8 @@
 		D3816B84255684FA0069BF53 /* spajam-final-product.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "spajam-final-product.entitlements"; sourceTree = "<group>"; };
 		D3816BA8255687B80069BF53 /* PayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
 		D38F77FF25569B1400E1B26E /* PayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
+		D3D144C52556D6F30062E3BB /* GuideChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideChildViewController.swift; sourceTree = "<group>"; };
+		D3D144C62556D6F30062E3BB /* GuideChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideChildViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +159,7 @@
 				CA286BFD2556C15100FADD71 /* Kingfisher in Frameworks */,
 				CA4185CD255695E8006433B8 /* RxMoya in Frameworks */,
 				CA4185BD255691B2006433B8 /* RxRelay in Frameworks */,
+				D372BD2A2556DC9500D4912B /* Pageboy in Frameworks */,
 				CAFC4BA92554129900EC056A /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -166,6 +175,7 @@
 				CA286C012556C16100FADD71 /* Kingfisher in Frameworks */,
 				D300636925569F5000944A15 /* Moya in Frameworks */,
 				D300636125569F5000944A15 /* RxCocoa in Frameworks */,
+				D372BD2E2556DC9D00D4912B /* Pageboy in Frameworks */,
 				D3527A4F2556B79800836361 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -279,6 +289,7 @@
 		D3527A522556B7BE00836361 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				D3D144C42556D67B0062E3BB /* Guide */,
 				D3527A532556B7BE00836361 /* MenuList */,
 				D3527A562556B7BE00836361 /* Map */,
 				D3527A592556B7BE00836361 /* Menu */,
@@ -356,6 +367,16 @@
 			path = Pay;
 			sourceTree = "<group>";
 		};
+		D3D144C42556D67B0062E3BB /* Guide */ = {
+			isa = PBXGroup;
+			children = (
+				D3D144C52556D6F30062E3BB /* GuideChildViewController.swift */,
+				D3D144C62556D6F30062E3BB /* GuideChildViewController.xib */,
+				D372BD332556DD1900D4912B /* GuidePageViewController.swift */,
+			);
+			path = Guide;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -382,6 +403,7 @@
 				CA4185C5255695CB006433B8 /* Action */,
 				CA4185CA255695E8006433B8 /* Moya */,
 				CA4185CC255695E8006433B8 /* RxMoya */,
+				D372BD292556DC9500D4912B /* Pageboy */,
 				CA286BFC2556C15100FADD71 /* Kingfisher */,
 			);
 			productName = "spajam-final-product";
@@ -405,6 +427,7 @@
 				CA4185D725569EE4006433B8 /* RxSwift */,
 				CA4185DD25569EE4006433B8 /* RxMoya */,
 				D3527A4E2556B79800836361 /* PKHUD */,
+				D372BD2D2556DC9D00D4912B /* Pageboy */,
 				CA286C002556C16100FADD71 /* Kingfisher */,
 			);
 			productName = "spajam-final-product-clip";
@@ -442,6 +465,7 @@
 				CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */,
 				CA4185C4255695CB006433B8 /* XCRemoteSwiftPackageReference "Action" */,
 				CA4185C9255695E8006433B8 /* XCRemoteSwiftPackageReference "Moya" */,
+				D372BD282556DC9500D4912B /* XCRemoteSwiftPackageReference "Pageboy" */,
 				CA286BFB2556C15100FADD71 /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = CAAFB726253B131600B26DE2 /* Products */;
@@ -462,6 +486,7 @@
 				D3527A642556B7BE00836361 /* MenuViewController.xib in Resources */,
 				CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */,
 				D3527A622556B7BE00836361 /* MapViewController.xib in Resources */,
+				D3D144C82556D6F30062E3BB /* GuideChildViewController.xib in Resources */,
 				CA286BF62556BDE900FADD71 /* MenuTableViewCell.xib in Resources */,
 				D3527A5C2556B7BE00836361 /* MenuListViewController.xib in Resources */,
 			);
@@ -487,6 +512,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D3527A602556B7BE00836361 /* MapViewController.swift in Sources */,
+				D3D144C72556D6F30062E3BB /* GuideChildViewController.swift in Sources */,
 				CA286C0F2556C4BD00FADD71 /* GetShopDataGatewayAction.swift in Sources */,
 				CA4185E92556A090006433B8 /* GetShopsDataGatewayAction.swift in Sources */,
 				D379165B25568F2F0015BE4F /* Menu.swift in Sources */,
@@ -494,6 +520,7 @@
 				CAFC4BB32554320E00EC056A /* AppError.swift in Sources */,
 				CA4185E225569F37006433B8 /* KaikaiAPI.swift in Sources */,
 				D3527A742556B83700836361 /* DataGateway.swift in Sources */,
+				D372BD342556DD1900D4912B /* GuidePageViewController.swift in Sources */,
 				D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */,
 				D379165F25568F710015BE4F /* Shop.swift in Sources */,
 				D3527A662556B7BE00836361 /* MenuViewController.swift in Sources */,
@@ -843,6 +870,14 @@
 				minimumVersion = 5.4.0;
 			};
 		};
+		D372BD282556DC9500D4912B /* XCRemoteSwiftPackageReference "Pageboy" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/uias/Pageboy";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 3.6.2;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -925,6 +960,16 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CAFC4BA72554129900EC056A /* XCRemoteSwiftPackageReference "PKHUD" */;
 			productName = PKHUD;
+		};
+		D372BD292556DC9500D4912B /* Pageboy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D372BD282556DC9500D4912B /* XCRemoteSwiftPackageReference "Pageboy" */;
+			productName = Pageboy;
+		};
+		D372BD2D2556DC9D00D4912B /* Pageboy */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D372BD282556DC9500D4912B /* XCRemoteSwiftPackageReference "Pageboy" */;
+			productName = Pageboy;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

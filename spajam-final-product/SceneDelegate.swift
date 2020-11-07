@@ -6,6 +6,7 @@
 //
 
 import UIKit
+import AppClip
 
 class SceneDelegate: UIResponder, UIWindowSceneDelegate {
     
@@ -21,6 +22,28 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         tabBarController.viewControllers = [MenuListViewController(), MapViewController()]
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
+    }
+    
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        guard let url = userActivity.appClipActivationPayload?.url else {
+            return
+        }
+        handleAppClip(url: url)
+    }
+    
+    private func handleAppClip(url: URL) {
+        if url.absoluteString.contains("guides") {
+            // GuidePageViewController
+            let guidePageViewController = GuidePageViewController(images: [
+                URL(string: "")!,
+                URL(string: "")!,
+                URL(string: "")!,
+            ])
+            guidePageViewController.modalPresentationStyle = .fullScreen
+            window?.rootViewController?.present(guidePageViewController, animated: true, completion: nil)
+        } else if url.absoluteString.contains("shops") {
+            // MenuListViewController
+        }
     }
     
     func sceneDidDisconnect(_ scene: UIScene) {
