@@ -31,6 +31,8 @@
 		CA4186392556B3E9006433B8 /* MenuListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4186242556B2DB006433B8 /* MenuListViewController.xib */; };
 		CA41863C2556B3EC006433B8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41862A2556B2EF006433B8 /* MenuViewController.swift */; };
 		CA41863F2556B3EF006433B8 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA41862B2556B2EF006433B8 /* MenuViewController.xib */; };
+		CA4186472556B7D9006433B8 /* MenuTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4186452556B7D9006433B8 /* MenuTableViewCell.swift */; };
+		CA4186482556B7D9006433B8 /* MenuTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4186462556B7D9006433B8 /* MenuTableViewCell.xib */; };
 		CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB728253B131600B26DE2 /* AppDelegate.swift */; };
 		CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB72A253B131600B26DE2 /* SceneDelegate.swift */; };
 		CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
@@ -83,6 +85,8 @@
 		CA4186242556B2DB006433B8 /* MenuListViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuListViewController.xib; sourceTree = "<group>"; };
 		CA41862A2556B2EF006433B8 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		CA41862B2556B2EF006433B8 /* MenuViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		CA4186452556B7D9006433B8 /* MenuTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuTableViewCell.swift; sourceTree = "<group>"; };
+		CA4186462556B7D9006433B8 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		CAAFB725253B131600B26DE2 /* spajam-final-product.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spajam-final-product.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAFB728253B131600B26DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAAFB72A253B131600B26DE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -189,6 +193,15 @@
 			path = Menu;
 			sourceTree = "<group>";
 		};
+		CA4186442556B7BD006433B8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CA4186452556B7D9006433B8 /* MenuTableViewCell.swift */,
+				CA4186462556B7D9006433B8 /* MenuTableViewCell.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
 		CAAFB71C253B131600B26DE2 = {
 			isa = PBXGroup;
 			children = (
@@ -224,6 +237,7 @@
 		D31401D225567CB300C30923 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CA4186442556B7BD006433B8 /* View */,
 				CA4186182556B29C006433B8 /* ViewControllers */,
 				CAAFB731253B131900B26DE2 /* Assets.xcassets */,
 				CAFC4BB22554320E00EC056A /* AppError.swift */,
@@ -378,6 +392,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4186482556B7D9006433B8 /* MenuTableViewCell.xib in Resources */,
 				CA4186262556B2DB006433B8 /* MenuListViewController.xib in Resources */,
 				CA41862D2556B2EF006433B8 /* MenuViewController.xib in Resources */,
 				CAAFB735253B131900B26DE2 /* LaunchScreen.storyboard in Resources */,
@@ -406,6 +421,7 @@
 			files = (
 				CA41862C2556B2EF006433B8 /* MenuViewController.swift in Sources */,
 				CA4186252556B2DB006433B8 /* MenuListViewController.swift in Sources */,
+				CA4186472556B7D9006433B8 /* MenuTableViewCell.swift in Sources */,
 				D31401D925567CB300C30923 /* DataGatewayAction.swift in Sources */,
 				D31401D825567CB300C30923 /* DataGateway.swift in Sources */,
 				CA4185E92556A090006433B8 /* GetShopsDataGatewayAction.swift in Sources */,
