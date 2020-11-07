@@ -52,6 +52,7 @@ class MenuListViewController: UIViewController {
         tableView.rowHeight = 124
         bind()
         viewModel.viewDidLoad.accept(())
+        tableView.tableFooterView = UIView()
     }
     
     func bind() {
@@ -68,8 +69,14 @@ class MenuListViewController: UIViewController {
             guard let self = self else { return }
             self.payService = PayService()
             self.payService?.showPaymentViewController(on: self, items: tupleArray, shop: shop)
+            self.payService?.didSuccessPaymentService.bind(to: self.viewModel.didFinishPurchase).disposed(by: self.disposeBag)
         }).disposed(by: disposeBag)
         viewModel.price.map { "¥\($0)"}.drive(priceLabel.rx.text).disposed(by: disposeBag)
+        viewModel.showPurchaseFinishViewController.drive(onNext: { [weak self] in
+            let viewController = PurchaseFinishViewController(data: $0)
+            self?.navigationController?.pushViewController(viewController, animated: true)
+        }).disposed(by: disposeBag)
+        
         
         tableView.rx.itemSelected.map { $0.row }.bind(to: viewModel.itemSelected).disposed(by: disposeBag)
         tableView.rx.itemSelected.subscribe(onNext: { [tableView] in tableView?.deselectRow(at: $0, animated: true)}).disposed(by: disposeBag)

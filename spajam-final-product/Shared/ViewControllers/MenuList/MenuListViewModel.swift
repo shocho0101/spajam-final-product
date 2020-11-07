@@ -18,6 +18,7 @@ extension MenuListViewController {
         let itemSelected = PublishRelay<Int>()
         let purchaseButtonTapped = PublishRelay<Void>()
         let addCart = PublishRelay<(menu: Menu, count: Int)>()
+        let didFinishPurchase = PublishRelay<Void>()
         
         let cartDictionary = BehaviorRelay<[Int: Int]>(value: [:])
         
@@ -59,10 +60,18 @@ extension MenuListViewController {
         
         var startApplePay: Driver<([(menu: Menu, count: Int)], Shop)> {
             return purchaseButtonTapped
-                .withLatestFrom(menus)
+                .withLatestFrom(menus.map { tupleArray in return tupleArray.filter { $0.count > 0 }})
                 .withLatestFrom(shop, resultSelector: { menu, shop in
                     return (menu, shop)
                 })
+                .asDriver(onErrorDriveWith: .empty())
+        }
+        
+        var showPurchaseFinishViewController: Driver<[(menu: Menu, count: Int)]> {
+            return didFinishPurchase.withLatestFrom(menus)
+                .map { tupleArray in
+                    return tupleArray.filter { $0.count > 0 }
+                }
                 .asDriver(onErrorDriveWith: .empty())
         }
     }
