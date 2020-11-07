@@ -18,7 +18,8 @@ class MapViewController: UIViewController {
     let action = DataGateway.getAction(GetShopsDataGatewayAction.self, useMock: true)
     
     
-    @IBOutlet var mapView: MKMapView!
+    @IBOutlet weak var mapView: MKMapView!
+    @IBOutlet weak var cardView: CardView!
     
     let locationManager: CLLocationManager = CLLocationManager()
     
@@ -68,6 +69,13 @@ class MapViewController: UIViewController {
         pin.subtitle = shop.capacity.description
         pin.coordinate = coordinate
         mapView.addAnnotation(pin)
+    }
+    
+    func setCardView(shop:Shop) {
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: .transitionCrossDissolve, animations: {
+            self.cardView.isHidden = false
+            self.cardView.setShop(shop: shop)
+        })
     }
     
     @IBAction func currentButtonTap() {
