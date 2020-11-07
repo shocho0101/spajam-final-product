@@ -19,7 +19,7 @@ enum KaikaiAPI: TargetType {
     var path: String {
         switch self {
         case .getShops:
-            return "/shops"
+            return "/shop"
         case .getShop(let shopId, _, _):
             return "/shop/\(shopId)"
         }

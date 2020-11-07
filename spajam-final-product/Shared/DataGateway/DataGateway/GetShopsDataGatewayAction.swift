@@ -18,12 +18,14 @@ struct GetShopsDataGatewayAction: DataGatewayAction {
         })
         
         return .init { zipCode in
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
             return provider.rx
                 .request(.getShops)
                 .do(onSuccess: { response in
                     print(response)
                 })
-                .map([Shop].self)
+                .map([Shop].self, using: decoder)
                 .debug()
                 .asObservable()
         }
@@ -38,12 +40,14 @@ extension GetShopsDataGatewayAction: DataGatewayMockable {
         })
         
         return .init { zipCode in
+            let decoder = JSONDecoder()
+            decoder.keyDecodingStrategy = .convertFromSnakeCase
             return provider.rx
                 .request(.getShops)
                 .do(onSuccess: { response in
                     print(response)
                 })
-                .map([Shop].self)
+                .map([Shop].self, using: decoder)
                 .debug()
                 .asObservable()
         }
