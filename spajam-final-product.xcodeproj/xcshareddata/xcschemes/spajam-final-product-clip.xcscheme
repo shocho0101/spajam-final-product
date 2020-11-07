@@ -53,8 +53,8 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "_XCAppClipURL"
-            value = "https://example.com"
-            isEnabled = "NO">
+            value = "https://choccho.tech/guides?shop_id=1"
+            isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>
    </LaunchAction>
