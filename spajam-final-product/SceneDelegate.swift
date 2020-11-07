@@ -18,9 +18,8 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
         
-        let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [MenuListViewController(.init(shopId: 1, tableId: 1)), MapViewController()]
-        window.rootViewController = tabBarController
+        let navigationController = UINavigationController(rootViewController: MapViewController())
+        window.rootViewController = navigationController
         window.makeKeyAndVisible()
     }
     

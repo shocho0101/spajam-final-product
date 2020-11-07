@@ -21,7 +21,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LqS-Ay-oNU">
-                    <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                    <rect key="frame" x="0.0" y="44" width="414" height="852"/>
                 </mapView>
                 <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4Q-eF-PVR" customClass="CardView" customModule="spajam_final_product" customModuleProvider="target">
                     <rect key="frame" x="24" y="762" width="366" height="92"/>
@@ -35,7 +35,7 @@
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstAttribute="bottom" secondItem="LqS-Ay-oNU" secondAttribute="bottom" id="12N-Rc-edO"/>
-                <constraint firstItem="LqS-Ay-oNU" firstAttribute="top" secondItem="i5M-Pr-FkT" secondAttribute="top" id="KEy-Pq-K6q"/>
+                <constraint firstItem="LqS-Ay-oNU" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" id="KEy-Pq-K6q"/>
                 <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="A4Q-eF-PVR" secondAttribute="trailing" constant="24" id="RKL-fm-dcL"/>
                 <constraint firstItem="A4Q-eF-PVR" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="24" id="W61-Yz-t45"/>
                 <constraint firstItem="LqS-Ay-oNU" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" id="anR-mS-DMp"/>
