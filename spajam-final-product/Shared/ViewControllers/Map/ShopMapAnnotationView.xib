@@ -13,6 +13,9 @@
             <rect key="frame" x="0.0" y="0.0" width="109" height="32"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vD5-qu-eLK">
+                    <rect key="frame" x="0.0" y="0.0" width="109" height="32"/>
+                </view>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ned-pX-afF">
                     <rect key="frame" x="8" y="8" width="93" height="16"/>
                     <subviews>
@@ -38,14 +41,18 @@
                 </view>
             </subviews>
             <constraints>
+                <constraint firstItem="vD5-qu-eLK" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" id="0DY-4J-aaj"/>
                 <constraint firstItem="ned-pX-afF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="5A0-dO-vml"/>
+                <constraint firstItem="vD5-qu-eLK" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" id="B58-Sk-NsC"/>
                 <constraint firstItem="ned-pX-afF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Eog-oX-4jm"/>
+                <constraint firstAttribute="trailing" secondItem="vD5-qu-eLK" secondAttribute="trailing" id="HNu-Pn-e4G"/>
+                <constraint firstAttribute="bottom" secondItem="vD5-qu-eLK" secondAttribute="bottom" id="ZcS-Mj-NpG"/>
                 <constraint firstAttribute="trailing" secondItem="ned-pX-afF" secondAttribute="trailing" constant="8" id="iJY-po-oLw"/>
                 <constraint firstAttribute="bottom" secondItem="ned-pX-afF" secondAttribute="bottom" constant="8" id="j2V-Zs-mX6"/>
             </constraints>
             <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
             <connections>
-                <outlet property="contentView" destination="ned-pX-afF" id="Y5Q-aq-JWc"/>
+                <outlet property="contentView" destination="vD5-qu-eLK" id="eJb-Cs-eVr"/>
                 <outlet property="shopCrowdedImageView" destination="mi0-lj-TOE" id="jhD-ZK-s4I"/>
                 <outlet property="shopNameLabel" destination="nie-Ca-Los" id="7gB-R3-Lri"/>
             </connections>
