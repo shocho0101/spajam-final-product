@@ -7,19 +7,30 @@
 
 import UIKit
 import Pageboy
+import RxSwift
 
 class GuidePageViewController: PageboyViewController, PageboyViewControllerDataSource {
     
-    private let viewControllers: [GuideChildViewController]
+    private var viewControllers: [GuideChildViewController] = []
+    private let action = DataGateway.getAction(GetShopDataGatewayAction.self)
+    private let disposeBag: DisposeBag = DisposeBag()
     
-    let images: [URL]
+    var images: [URL] = []
     
     init(shopId: Int) {
-        self.images = [URL(string: "https://yahoo.co.jp/icon")!]
-        viewControllers = images.map {
-            GuideChildViewController(image: $0, titleText: "姫路城の歴史", detailText: "1956年に行われた「昭和の大修理」まで、姫路城はずっと傾いて建っていました。")
-        }
         super.init(nibName: nil, bundle: nil)
+        transition = .init(style: .fade, duration: 2.0)
+        let uuid = UIDevice.current.identifierForVendor?.uuidString ?? ""
+        action.execute(.init(shopId: shopId, tableId: 1, deviceId: uuid)).subscribe(onNext: { [weak self] shop in
+            self?.viewControllers = [GuideChildViewController(
+                image: URL(string: shop.imageUrl!)!,
+                titleText: "姫路城の歴史",
+                detailText: "1956年に行われた「昭和の大修理」まで、姫路城はずっと傾いて建っていました。"
+            )
+            ]
+            self?.reloadData()
+        })
+        .disposed(by: disposeBag)
     }
     
     required init?(coder: NSCoder) {
@@ -32,11 +43,14 @@ class GuidePageViewController: PageboyViewController, PageboyViewControllerDataS
     }
     
     func numberOfViewControllers(in pageboyViewController: PageboyViewController) -> Int {
-        3
+        viewControllers.count
     }
     
     func viewController(for pageboyViewController: PageboyViewController, at index: PageboyViewController.PageIndex) -> UIViewController? {
-        viewControllers[index]
+        if viewControllers.isEmpty || index >= viewControllers.count {
+            return nil
+        }
+        return viewControllers[index]
     }
     
     func defaultPage(for pageboyViewController: PageboyViewController) -> PageboyViewController.Page? {
