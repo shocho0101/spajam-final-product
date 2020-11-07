@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		CA4185B9255691B2006433B8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185B8255691B2006433B8 /* RxSwift */; };
+		CA4185BB255691B2006433B8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185BA255691B2006433B8 /* RxCocoa */; };
+		CA4185BD255691B2006433B8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185BC255691B2006433B8 /* RxRelay */; };
+		CA4185C6255695CB006433B8 /* Action in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185C5255695CB006433B8 /* Action */; };
+		CA4185CB255695E8006433B8 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185CA255695E8006433B8 /* Moya */; };
+		CA4185CD255695E8006433B8 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185CC255695E8006433B8 /* RxMoya */; };
 		CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB728253B131600B26DE2 /* AppDelegate.swift */; };
 		CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB72A253B131600B26DE2 /* SceneDelegate.swift */; };
 		CAAFB72D253B131600B26DE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB72C253B131600B26DE2 /* ViewController.swift */; };
@@ -81,6 +87,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4185C6255695CB006433B8 /* Action in Frameworks */,
+				CA4185BB255691B2006433B8 /* RxCocoa in Frameworks */,
+				CA4185CB255695E8006433B8 /* Moya in Frameworks */,
+				CA4185B9255691B2006433B8 /* RxSwift in Frameworks */,
+				CA4185CD255695E8006433B8 /* RxMoya in Frameworks */,
+				CA4185BD255691B2006433B8 /* RxRelay in Frameworks */,
 				CAFC4BA92554129900EC056A /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -208,6 +220,12 @@
 			name = "spajam-final-product";
 			packageProductDependencies = (
 				CAFC4BA82554129900EC056A /* PKHUD */,
+				CA4185B8255691B2006433B8 /* RxSwift */,
+				CA4185BA255691B2006433B8 /* RxCocoa */,
+				CA4185BC255691B2006433B8 /* RxRelay */,
+				CA4185C5255695CB006433B8 /* Action */,
+				CA4185CA255695E8006433B8 /* Moya */,
+				CA4185CC255695E8006433B8 /* RxMoya */,
 			);
 			productName = "spajam-final-product";
 			productReference = CAAFB725253B131600B26DE2 /* spajam-final-product.app */;
@@ -261,6 +279,9 @@
 			mainGroup = CAAFB71C253B131600B26DE2;
 			packageReferences = (
 				CAFC4BA72554129900EC056A /* XCRemoteSwiftPackageReference "PKHUD" */,
+				CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */,
+				CA4185C4255695CB006433B8 /* XCRemoteSwiftPackageReference "Action" */,
+				CA4185C9255695E8006433B8 /* XCRemoteSwiftPackageReference "Moya" */,
 			);
 			productRefGroup = CAAFB726253B131600B26DE2 /* Products */;
 			projectDirPath = "";
@@ -489,7 +510,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "spajam-final-product/spajam-final-product.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = "spajam-final-product/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -498,6 +520,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = ChoSho;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -530,7 +553,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "spajam-final-product-clip/spajam_final_product_clip.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = "spajam-final-product-clip/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -540,6 +564,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product.Clip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "ChoSho clip";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -551,7 +576,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "spajam-final-product-clip/spajam_final_product_clip.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = "spajam-final-product-clip/Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
@@ -561,6 +587,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product.Clip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "ChoSho clip";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -599,6 +626,30 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
+		CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.1.1;
+			};
+		};
+		CA4185C4255695CB006433B8 /* XCRemoteSwiftPackageReference "Action" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/RxSwiftCommunity/Action";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 4.2.0;
+			};
+		};
+		CA4185C9255695E8006433B8 /* XCRemoteSwiftPackageReference "Moya" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Moya/Moya.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 14.0.0;
+			};
+		};
 		CAFC4BA72554129900EC056A /* XCRemoteSwiftPackageReference "PKHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pkluz/PKHUD.git";
@@ -610,6 +661,36 @@
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
+		CA4185B8255691B2006433B8 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		CA4185BA255691B2006433B8 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		CA4185BC255691B2006433B8 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		CA4185C5255695CB006433B8 /* Action */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185C4255695CB006433B8 /* XCRemoteSwiftPackageReference "Action" */;
+			productName = Action;
+		};
+		CA4185CA255695E8006433B8 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185C9255695E8006433B8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		CA4185CC255695E8006433B8 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185C9255695E8006433B8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
+		};
 		CAFC4BA82554129900EC056A /* PKHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CAFC4BA72554129900EC056A /* XCRemoteSwiftPackageReference "PKHUD" */;
