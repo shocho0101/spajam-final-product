@@ -6,9 +6,6 @@
 //
 
 import UIKit
-import RxSwift
-import RxMoya
-import Moya
 
 class ViewController: UIViewController {
     override func viewDidLoad() {

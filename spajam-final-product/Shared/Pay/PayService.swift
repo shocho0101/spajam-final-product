@@ -19,14 +19,22 @@ final class PayService {
         return PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: paymentNetworkToSupport)
     }
     
-    func startPayment() {
-        let merchentID = ""
+    private func buildPaymentRequest() -> PKPaymentRequest {
+        let merchentID = "merchant.com.litech.spajam-final-product.aa"
         let request = PKPaymentRequest()
         request.countryCode = "JP"
         request.currencyCode = "JPY"
         request.merchantIdentifier = merchentID
         request.supportedNetworks = paymentNetworkToSupport
         request.merchantCapabilities = .capability3DS
+        
+        let item = PKPaymentSummaryItem(label: "メニュー1", amount: 1)
+        request.paymentSummaryItems = [item]
+        return request
+    }
+    
+    func showPaymentViewController(on viewController: UIViewController) {
+        let paymentController = PKPaymentAuthorizationViewController(paymentRequest: buildPaymentRequest())
         
     }
 }

@@ -15,14 +15,11 @@
 		CA4185CD255695E8006433B8 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185CC255695E8006433B8 /* RxMoya */; };
 		CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB728253B131600B26DE2 /* AppDelegate.swift */; };
 		CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB72A253B131600B26DE2 /* SceneDelegate.swift */; };
-		CAAFB72D253B131600B26DE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB72C253B131600B26DE2 /* ViewController.swift */; };
 		CAAFB730253B131600B26DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB72E253B131600B26DE2 /* Main.storyboard */; };
 		CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
 		CAAFB735253B131900B26DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB733253B131900B26DE2 /* LaunchScreen.storyboard */; };
 		CAFC4BA92554129900EC056A /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CAFC4BA82554129900EC056A /* PKHUD */; };
 		CAFC4BB32554320E00EC056A /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC4BB22554320E00EC056A /* AppError.swift */; };
-		D31401D825567CB300C30923 /* DataGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D425567CB300C30923 /* DataGateway.swift */; };
-		D31401D925567CB300C30923 /* DataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D525567CB300C30923 /* DataGatewayAction.swift */; };
 		D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
 		D379165B25568F2F0015BE4F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165A25568F2F0015BE4F /* Menu.swift */; };
 		D379165F25568F710015BE4F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165E25568F710015BE4F /* Shop.swift */; };
@@ -550,6 +547,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "spajam-final-product/spajam-final-product.entitlements";
+				CODE_SIGN_IDENTITY = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = "spajam-final-product/Info.plist";
@@ -559,6 +557,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
