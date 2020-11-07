@@ -14,8 +14,8 @@ class GuidePageViewController: PageboyViewController, PageboyViewControllerDataS
     
     let images: [URL]
     
-    init(images: [URL]) {
-        self.images = images
+    init(shopId: Int) {
+        self.images = [URL(string: "https://yahoo.co.jp/icon")!]
         viewControllers = images.map {
             GuideChildViewController(image: $0, titleText: "姫路城の歴史", detailText: "1956年に行われた「昭和の大修理」まで、姫路城はずっと傾いて建っていました。")
         }

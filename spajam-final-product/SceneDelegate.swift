@@ -24,28 +24,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         window.makeKeyAndVisible()
     }
     
-    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
-        guard let url = userActivity.appClipActivationPayload?.url else {
-            return
-        }
-        handleAppClip(url: url)
-    }
-    
-    private func handleAppClip(url: URL) {
-        if url.absoluteString.contains("guides") {
-            // GuidePageViewController
-            let guidePageViewController = GuidePageViewController(images: [
-                URL(string: "")!,
-                URL(string: "")!,
-                URL(string: "")!,
-            ])
-            guidePageViewController.modalPresentationStyle = .fullScreen
-            window?.rootViewController?.present(guidePageViewController, animated: true, completion: nil)
-        } else if url.absoluteString.contains("shops") {
-            // MenuListViewController
-        }
-    }
-    
     func sceneDidDisconnect(_ scene: UIScene) {
         // Called as the scene is being released by the system.
         // This occurs shortly after the scene enters the background, or when its session is discarded.
