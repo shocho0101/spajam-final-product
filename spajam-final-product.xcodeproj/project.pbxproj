@@ -24,7 +24,38 @@
 		D31401D825567CB300C30923 /* DataGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D425567CB300C30923 /* DataGateway.swift */; };
 		D31401D925567CB300C30923 /* DataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D525567CB300C30923 /* DataGatewayAction.swift */; };
 		D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
+		D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B672556845A0069BF53 /* AppDelegate.swift */; };
+		D3816B6A2556845A0069BF53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B692556845A0069BF53 /* SceneDelegate.swift */; };
+		D3816B6C2556845A0069BF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B6B2556845A0069BF53 /* ViewController.swift */; };
+		D3816B6F2556845A0069BF53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3816B6D2556845A0069BF53 /* Main.storyboard */; };
+		D3816B742556845B0069BF53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3816B722556845B0069BF53 /* LaunchScreen.storyboard */; };
+		D3816B792556845B0069BF53 /* spajam-final-product-clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = D3816B652556845A0069BF53 /* spajam-final-product-clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		D3816B81255684D50069BF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D3816B772556845B0069BF53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAAFB71D253B131600B26DE2 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D3816B642556845A0069BF53;
+			remoteInfo = "spajam-final-product-clip";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		D3816B5625567E710069BF53 /* Embed App Clips */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/AppClips";
+			dstSubfolderSpec = 16;
+			files = (
+				D3816B792556845B0069BF53 /* spajam-final-product-clip.app in Embed App Clips */,
+			);
+			name = "Embed App Clips";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		CAAFB725253B131600B26DE2 /* spajam-final-product.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spajam-final-product.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -39,6 +70,15 @@
 		D31401D425567CB300C30923 /* DataGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGateway.swift; sourceTree = "<group>"; };
 		D31401D525567CB300C30923 /* DataGatewayAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGatewayAction.swift; sourceTree = "<group>"; };
 		D31401D725567CB300C30923 /* ModelMockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMockable.swift; sourceTree = "<group>"; };
+		D3816B652556845A0069BF53 /* spajam-final-product-clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spajam-final-product-clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		D3816B672556845A0069BF53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D3816B692556845A0069BF53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D3816B6B2556845A0069BF53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D3816B6E2556845A0069BF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D3816B732556845B0069BF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D3816B752556845B0069BF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D3816B762556845B0069BF53 /* spajam_final_product_clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = spajam_final_product_clip.entitlements; sourceTree = "<group>"; };
+		D3816B84255684FA0069BF53 /* spajam-final-product.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "spajam-final-product.entitlements"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,6 +96,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3816B622556845A0069BF53 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -64,6 +111,7 @@
 			children = (
 				D31401D225567CB300C30923 /* Shared */,
 				CAAFB727253B131600B26DE2 /* spajam-final-product */,
+				D3816B662556845A0069BF53 /* spajam-final-product-clip */,
 				CAAFB726253B131600B26DE2 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -72,6 +120,7 @@
 			isa = PBXGroup;
 			children = (
 				CAAFB725253B131600B26DE2 /* spajam-final-product.app */,
+				D3816B652556845A0069BF53 /* spajam-final-product-clip.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -79,6 +128,7 @@
 		CAAFB727253B131600B26DE2 /* spajam-final-product */ = {
 			isa = PBXGroup;
 			children = (
+				D3816B84255684FA0069BF53 /* spajam-final-product.entitlements */,
 				CAAFB728253B131600B26DE2 /* AppDelegate.swift */,
 				CAAFB72A253B131600B26DE2 /* SceneDelegate.swift */,
 				CAAFB72C253B131600B26DE2 /* ViewController.swift */,
@@ -92,6 +142,7 @@
 		D31401D225567CB300C30923 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D3816B5D25567E950069BF53 /* Pay */,
 				CAAFB731253B131900B26DE2 /* Assets.xcassets */,
 				CAFC4BB22554320E00EC056A /* AppError.swift */,
 				D31401D325567CB300C30923 /* DataGateway */,
@@ -118,6 +169,27 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D3816B5D25567E950069BF53 /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Pay;
+			sourceTree = "<group>";
+		};
+		D3816B662556845A0069BF53 /* spajam-final-product-clip */ = {
+			isa = PBXGroup;
+			children = (
+				D3816B672556845A0069BF53 /* AppDelegate.swift */,
+				D3816B692556845A0069BF53 /* SceneDelegate.swift */,
+				D3816B6B2556845A0069BF53 /* ViewController.swift */,
+				D3816B6D2556845A0069BF53 /* Main.storyboard */,
+				D3816B722556845B0069BF53 /* LaunchScreen.storyboard */,
+				D3816B752556845B0069BF53 /* Info.plist */,
+				D3816B762556845B0069BF53 /* spajam_final_product_clip.entitlements */,
+			);
+			path = "spajam-final-product-clip";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -128,10 +200,12 @@
 				CAAFB721253B131600B26DE2 /* Sources */,
 				CAAFB722253B131600B26DE2 /* Frameworks */,
 				CAAFB723253B131600B26DE2 /* Resources */,
+				D3816B5625567E710069BF53 /* Embed App Clips */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				D3816B782556845B0069BF53 /* PBXTargetDependency */,
 			);
 			name = "spajam-final-product";
 			packageProductDependencies = (
@@ -147,17 +221,37 @@
 			productReference = CAAFB725253B131600B26DE2 /* spajam-final-product.app */;
 			productType = "com.apple.product-type.application";
 		};
+		D3816B642556845A0069BF53 /* spajam-final-product-clip */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D3816B7A2556845B0069BF53 /* Build configuration list for PBXNativeTarget "spajam-final-product-clip" */;
+			buildPhases = (
+				D3816B612556845A0069BF53 /* Sources */,
+				D3816B622556845A0069BF53 /* Frameworks */,
+				D3816B632556845A0069BF53 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "spajam-final-product-clip";
+			productName = "spajam-final-product-clip";
+			productReference = D3816B652556845A0069BF53 /* spajam-final-product-clip.app */;
+			productType = "com.apple.product-type.application.on-demand-install-capable";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
 		CAAFB71D253B131600B26DE2 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastSwiftUpdateCheck = 1200;
+				LastSwiftUpdateCheck = 1210;
 				LastUpgradeCheck = 1200;
 				TargetAttributes = {
 					CAAFB724253B131600B26DE2 = {
 						CreatedOnToolsVersion = 12.0.1;
+					};
+					D3816B642556845A0069BF53 = {
+						CreatedOnToolsVersion = 12.1;
 					};
 				};
 			};
@@ -181,6 +275,7 @@
 			projectRoot = "";
 			targets = (
 				CAAFB724253B131600B26DE2 /* spajam-final-product */,
+				D3816B642556845A0069BF53 /* spajam-final-product-clip */,
 			);
 		};
 /* End PBXProject section */
@@ -193,6 +288,16 @@
 				CAAFB735253B131900B26DE2 /* LaunchScreen.storyboard in Resources */,
 				CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */,
 				CAAFB730253B131600B26DE2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D3816B632556845A0069BF53 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3816B742556845B0069BF53 /* LaunchScreen.storyboard in Resources */,
+				D3816B81255684D50069BF53 /* Assets.xcassets in Resources */,
+				D3816B6F2556845A0069BF53 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -213,7 +318,25 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		D3816B612556845A0069BF53 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D3816B6C2556845A0069BF53 /* ViewController.swift in Sources */,
+				D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */,
+				D3816B6A2556845A0069BF53 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D3816B782556845B0069BF53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D3816B642556845A0069BF53 /* spajam-final-product-clip */;
+			targetProxy = D3816B772556845B0069BF53 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		CAAFB72E253B131600B26DE2 /* Main.storyboard */ = {
@@ -228,6 +351,22 @@
 			isa = PBXVariantGroup;
 			children = (
 				CAAFB734253B131900B26DE2 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		D3816B6D2556845A0069BF53 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3816B6E2556845A0069BF53 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D3816B722556845B0069BF53 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D3816B732556845B0069BF53 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
@@ -354,9 +493,12 @@
 		CAAFB73A253B131900B26DE2 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "spajam-final-product/spajam-final-product.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = "spajam-final-product/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -372,15 +514,60 @@
 		CAAFB73B253B131900B26DE2 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "spajam-final-product/spajam-final-product.entitlements";
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = "spajam-final-product/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D3816B7B2556845B0069BF53 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "spajam-final-product-clip/spajam_final_product_clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2X6AD4W323;
+				INFOPLIST_FILE = "spajam-final-product-clip/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product.Clip";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D3816B7C2556845B0069BF53 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "spajam-final-product-clip/spajam_final_product_clip.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 2X6AD4W323;
+				INFOPLIST_FILE = "spajam-final-product-clip/Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 14.1;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product.Clip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -404,6 +591,15 @@
 			buildConfigurations = (
 				CAAFB73A253B131900B26DE2 /* Debug */,
 				CAAFB73B253B131900B26DE2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D3816B7A2556845B0069BF53 /* Build configuration list for PBXNativeTarget "spajam-final-product-clip" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D3816B7B2556845B0069BF53 /* Debug */,
+				D3816B7C2556845B0069BF53 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
