@@ -13,14 +13,8 @@
 		CAAFB730253B131600B26DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB72E253B131600B26DE2 /* Main.storyboard */; };
 		CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
 		CAAFB735253B131900B26DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB733253B131900B26DE2 /* LaunchScreen.storyboard */; };
-		CAFC4B9F255411BF00EC056A /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = CAFC4B9E255411BF00EC056A /* Moya */; };
-		CAFC4BA1255411BF00EC056A /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CAFC4BA0255411BF00EC056A /* RxMoya */; };
-		CAFC4BA52554120300EC056A /* Action in Frameworks */ = {isa = PBXBuildFile; productRef = CAFC4BA42554120300EC056A /* Action */; };
 		CAFC4BA92554129900EC056A /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CAFC4BA82554129900EC056A /* PKHUD */; };
 		CAFC4BB32554320E00EC056A /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC4BB22554320E00EC056A /* AppError.swift */; };
-		CAFC4BB8255432A800EC056A /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CAFC4BB7255432A800EC056A /* RxCocoa */; };
-		CAFC4BBA255432A800EC056A /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CAFC4BB9255432A800EC056A /* RxRelay */; };
-		CAFC4BBC255432A800EC056A /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CAFC4BBB255432A800EC056A /* RxSwift */; };
 		D31401D825567CB300C30923 /* DataGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D425567CB300C30923 /* DataGateway.swift */; };
 		D31401D925567CB300C30923 /* DataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D525567CB300C30923 /* DataGatewayAction.swift */; };
 		D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
@@ -31,6 +25,7 @@
 		D3816B742556845B0069BF53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3816B722556845B0069BF53 /* LaunchScreen.storyboard */; };
 		D3816B792556845B0069BF53 /* spajam-final-product-clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = D3816B652556845A0069BF53 /* spajam-final-product-clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D3816B81255684D50069BF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
+		D3816BA5255686970069BF53 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = D3816BA4255686970069BF53 /* PKHUD */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,13 +81,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CAFC4BBA255432A800EC056A /* RxRelay in Frameworks */,
 				CAFC4BA92554129900EC056A /* PKHUD in Frameworks */,
-				CAFC4B9F255411BF00EC056A /* Moya in Frameworks */,
-				CAFC4BB8255432A800EC056A /* RxCocoa in Frameworks */,
-				CAFC4BA52554120300EC056A /* Action in Frameworks */,
-				CAFC4BA1255411BF00EC056A /* RxMoya in Frameworks */,
-				CAFC4BBC255432A800EC056A /* RxSwift in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -100,6 +89,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D3816BA5255686970069BF53 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -113,6 +103,7 @@
 				CAAFB727253B131600B26DE2 /* spajam-final-product */,
 				D3816B662556845A0069BF53 /* spajam-final-product-clip */,
 				CAAFB726253B131600B26DE2 /* Products */,
+				D3816BA3255686970069BF53 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -190,6 +181,13 @@
 			path = "spajam-final-product-clip";
 			sourceTree = "<group>";
 		};
+		D3816BA3255686970069BF53 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -209,13 +207,7 @@
 			);
 			name = "spajam-final-product";
 			packageProductDependencies = (
-				CAFC4B9E255411BF00EC056A /* Moya */,
-				CAFC4BA0255411BF00EC056A /* RxMoya */,
-				CAFC4BA42554120300EC056A /* Action */,
 				CAFC4BA82554129900EC056A /* PKHUD */,
-				CAFC4BB7255432A800EC056A /* RxCocoa */,
-				CAFC4BB9255432A800EC056A /* RxRelay */,
-				CAFC4BBB255432A800EC056A /* RxSwift */,
 			);
 			productName = "spajam-final-product";
 			productReference = CAAFB725253B131600B26DE2 /* spajam-final-product.app */;
@@ -234,6 +226,9 @@
 			dependencies = (
 			);
 			name = "spajam-final-product-clip";
+			packageProductDependencies = (
+				D3816BA4255686970069BF53 /* PKHUD */,
+			);
 			productName = "spajam-final-product-clip";
 			productReference = D3816B652556845A0069BF53 /* spajam-final-product-clip.app */;
 			productType = "com.apple.product-type.application.on-demand-install-capable";
@@ -265,10 +260,7 @@
 			);
 			mainGroup = CAAFB71C253B131600B26DE2;
 			packageReferences = (
-				CAFC4B9D255411BF00EC056A /* XCRemoteSwiftPackageReference "Moya" */,
-				CAFC4BA32554120300EC056A /* XCRemoteSwiftPackageReference "Action" */,
 				CAFC4BA72554129900EC056A /* XCRemoteSwiftPackageReference "PKHUD" */,
-				CAFC4BB6255432A800EC056A /* XCRemoteSwiftPackageReference "RxSwift" */,
 			);
 			productRefGroup = CAAFB726253B131600B26DE2 /* Products */;
 			projectDirPath = "";
@@ -607,22 +599,6 @@
 /* End XCConfigurationList section */
 
 /* Begin XCRemoteSwiftPackageReference section */
-		CAFC4B9D255411BF00EC056A /* XCRemoteSwiftPackageReference "Moya" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/Moya/Moya.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 14.0.0;
-			};
-		};
-		CAFC4BA32554120300EC056A /* XCRemoteSwiftPackageReference "Action" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/RxSwiftCommunity/Action";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 4.2.0;
-			};
-		};
 		CAFC4BA72554129900EC056A /* XCRemoteSwiftPackageReference "PKHUD" */ = {
 			isa = XCRemoteSwiftPackageReference;
 			repositoryURL = "https://github.com/pkluz/PKHUD.git";
@@ -631,51 +607,18 @@
 				minimumVersion = 5.4.0;
 			};
 		};
-		CAFC4BB6255432A800EC056A /* XCRemoteSwiftPackageReference "RxSwift" */ = {
-			isa = XCRemoteSwiftPackageReference;
-			repositoryURL = "https://github.com/ReactiveX/RxSwift.git";
-			requirement = {
-				kind = upToNextMajorVersion;
-				minimumVersion = 5.1.1;
-			};
-		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
-		CAFC4B9E255411BF00EC056A /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CAFC4B9D255411BF00EC056A /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
-		};
-		CAFC4BA0255411BF00EC056A /* RxMoya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CAFC4B9D255411BF00EC056A /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = RxMoya;
-		};
-		CAFC4BA42554120300EC056A /* Action */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CAFC4BA32554120300EC056A /* XCRemoteSwiftPackageReference "Action" */;
-			productName = Action;
-		};
 		CAFC4BA82554129900EC056A /* PKHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CAFC4BA72554129900EC056A /* XCRemoteSwiftPackageReference "PKHUD" */;
 			productName = PKHUD;
 		};
-		CAFC4BB7255432A800EC056A /* RxCocoa */ = {
+		D3816BA4255686970069BF53 /* PKHUD */ = {
 			isa = XCSwiftPackageProductDependency;
-			package = CAFC4BB6255432A800EC056A /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		CAFC4BB9255432A800EC056A /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CAFC4BB6255432A800EC056A /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
-		CAFC4BBB255432A800EC056A /* RxSwift */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CAFC4BB6255432A800EC056A /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxSwift;
+			package = CAFC4BA72554129900EC056A /* XCRemoteSwiftPackageReference "PKHUD" */;
+			productName = PKHUD;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};
