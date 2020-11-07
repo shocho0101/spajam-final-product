@@ -38,7 +38,7 @@ enum KaikaiAPI: TargetType {
     
     var task: Task {
         switch self {
-        case .getShops):
+        case .getShops:
         return .requestPlain
         }
     }
