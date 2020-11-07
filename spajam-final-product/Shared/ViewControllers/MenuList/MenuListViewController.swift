@@ -53,7 +53,17 @@ class MenuListViewController: UIViewController {
     
     func bind() {
         viewModel.menus.drive(tableView.rx.items(cellIdentifier: "Cell", cellType: MenuTableViewCell.self)) { row, element, cell in
-            cell.configure(menu: element, count: 0)
+            cell.configure(menu: element.0, count: element.1)
         }.disposed(by: disposeBag)
+        viewModel.showMenuViewController.drive(onNext: { [weak self] menuTuple in
+            guard let self = self else { return }
+            let menuViewController = MenuViewController(menu: menuTuple.0, count: menuTuple.1)
+            menuViewController.addCart.bind(to: self.viewModel.addCart).disposed(by: self.disposeBag)
+            self.navigationController?.pushViewController(menuViewController, animated: true)
+        }).disposed(by: disposeBag)
+        
+        
+        tableView.rx.itemSelected.map { $0.row }.bind(to: viewModel.itemSelected).disposed(by: disposeBag)
+        tableView.rx.itemSelected.subscribe(onNext: { [tableView] in tableView?.deselectRow(at: $0, animated: true)}).disposed(by: disposeBag)
     }
 }
