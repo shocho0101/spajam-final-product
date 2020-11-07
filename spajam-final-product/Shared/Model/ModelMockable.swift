@@ -14,6 +14,8 @@ protocol ModelMockable {
 
 extension ModelMockable where Self: Encodable {
     static var jsonMock: Data {
+        let encoder = JSONEncoder()
+        encoder.keyEncodingStrategy = .convertToSnakeCase
         return try! JSONEncoder().encode(mock)
     }
 }

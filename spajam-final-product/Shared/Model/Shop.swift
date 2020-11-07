@@ -8,7 +8,7 @@
 import Foundation
 
 struct Shop: Codable {
-    let shopId: String
+    let shopId: Int
     let shopName: String
     let menus: [Menu]
     let latitude: Double
@@ -19,7 +19,7 @@ struct Shop: Codable {
 
 extension Shop: ModelMockable {
     static var mock: Shop {
-        return .init(shopId: "aaaa",
+        return .init(shopId: 1,
                      shopName: "おみーせ",
                      menus: [.mock, .mock],
                      latitude: 35.681382,
