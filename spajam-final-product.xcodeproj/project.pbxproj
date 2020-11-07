@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		60C97DDF2556A1EA00EF9353 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60C97DDE2556A1EA00EF9353 /* ViewController.xib */; };
+		60C97DE72556AE6900EF9353 /* NSObject+Ex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60C97DE62556AE6900EF9353 /* NSObject+Ex.swift */; };
 		CA4185B9255691B2006433B8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185B8255691B2006433B8 /* RxSwift */; };
 		CA4185BB255691B2006433B8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185BA255691B2006433B8 /* RxCocoa */; };
 		CA4185BD255691B2006433B8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185BC255691B2006433B8 /* RxRelay */; };
@@ -16,7 +18,6 @@
 		CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB728253B131600B26DE2 /* AppDelegate.swift */; };
 		CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB72A253B131600B26DE2 /* SceneDelegate.swift */; };
 		CAAFB72D253B131600B26DE2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB72C253B131600B26DE2 /* ViewController.swift */; };
-		CAAFB730253B131600B26DE2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB72E253B131600B26DE2 /* Main.storyboard */; };
 		CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
 		CAAFB735253B131900B26DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB733253B131900B26DE2 /* LaunchScreen.storyboard */; };
 		CAFC4BA92554129900EC056A /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CAFC4BA82554129900EC056A /* PKHUD */; };
@@ -61,11 +62,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		60C97DDE2556A1EA00EF9353 /* ViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
+		60C97DE62556AE6900EF9353 /* NSObject+Ex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSObject+Ex.swift"; sourceTree = "<group>"; };
 		CAAFB725253B131600B26DE2 /* spajam-final-product.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spajam-final-product.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAAFB728253B131600B26DE2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		CAAFB72A253B131600B26DE2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		CAAFB72C253B131600B26DE2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		CAAFB72F253B131600B26DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAAFB731253B131900B26DE2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CAAFB734253B131900B26DE2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		CAAFB736253B131900B26DE2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -139,9 +141,10 @@
 				CAAFB728253B131600B26DE2 /* AppDelegate.swift */,
 				CAAFB72A253B131600B26DE2 /* SceneDelegate.swift */,
 				CAAFB72C253B131600B26DE2 /* ViewController.swift */,
-				CAAFB72E253B131600B26DE2 /* Main.storyboard */,
+				60C97DDE2556A1EA00EF9353 /* ViewController.xib */,
 				CAAFB733253B131900B26DE2 /* LaunchScreen.storyboard */,
 				CAAFB736253B131900B26DE2 /* Info.plist */,
+				60C97DE62556AE6900EF9353 /* NSObject+Ex.swift */,
 			);
 			path = "spajam-final-product";
 			sourceTree = "<group>";
@@ -297,8 +300,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				CAAFB735253B131900B26DE2 /* LaunchScreen.storyboard in Resources */,
+				60C97DDF2556A1EA00EF9353 /* ViewController.xib in Resources */,
 				CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */,
-				CAAFB730253B131600B26DE2 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -319,6 +322,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				60C97DE72556AE6900EF9353 /* NSObject+Ex.swift in Sources */,
 				D31401D925567CB300C30923 /* DataGatewayAction.swift in Sources */,
 				D31401D825567CB300C30923 /* DataGateway.swift in Sources */,
 				D379165B25568F2F0015BE4F /* Menu.swift in Sources */,
@@ -352,14 +356,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		CAAFB72E253B131600B26DE2 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				CAAFB72F253B131600B26DE2 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		CAAFB733253B131900B26DE2 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -520,7 +516,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ChoSho;
+				PROVISIONING_PROFILE_SPECIFIER = "spajam-final-product";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -564,7 +560,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product.Clip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "ChoSho clip";
+				PROVISIONING_PROFILE_SPECIFIER = "spajam-final-product-clip";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -587,7 +583,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product.Clip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "ChoSho clip";
+				PROVISIONING_PROFILE_SPECIFIER = "spajam-final-product-clip";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
