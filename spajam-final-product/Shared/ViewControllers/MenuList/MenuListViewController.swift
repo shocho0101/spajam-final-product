@@ -61,9 +61,14 @@ class MenuListViewController: UIViewController {
             menuViewController.addCart.bind(to: self.viewModel.addCart).disposed(by: self.disposeBag)
             self.navigationController?.pushViewController(menuViewController, animated: true)
         }).disposed(by: disposeBag)
-        
+        viewModel.startApplePay.drive(onNext: { [weak self] tupleArray in
+            guard let self = self else { return }
+            let payService = PayService()
+            payService.showPaymentViewController(on: self, items: tupleArray)
+        }).disposed(by: disposeBag)
         
         tableView.rx.itemSelected.map { $0.row }.bind(to: viewModel.itemSelected).disposed(by: disposeBag)
         tableView.rx.itemSelected.subscribe(onNext: { [tableView] in tableView?.deselectRow(at: $0, animated: true)}).disposed(by: disposeBag)
+        purchaseButton.rx.tap.bind(to: viewModel.purchaseButtonTapped).disposed(by: disposeBag)
     }
 }

@@ -39,7 +39,7 @@ final class PayService: NSObject {
         request.merchantCapabilities = .capability3DS
         
         let items = items.map { (menu, count) in
-            PKPaymentSummaryItem(label: menu.menuName, amount: NSDecimalNumber(value: count))
+            PKPaymentSummaryItem(label: menu.menuName, amount: NSDecimalNumber(value: count * menu.price))
         }
         request.paymentSummaryItems = items
         return request
@@ -59,5 +59,9 @@ extension PayService: PKPaymentAuthorizationViewControllerDelegate {
     func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
         viewController?.dismiss(animated: true, completion: nil)
         didSuccessPaymentServiceRelay.accept(())
+    }
+    
+    func paymentAuthorizationViewController(_ controller: PKPaymentAuthorizationViewController, didAuthorizePayment payment: PKPayment, handler completion: @escaping (PKPaymentAuthorizationResult) -> Void) {
+        completion(.init(status: .success, errors: nil))
     }
 }
