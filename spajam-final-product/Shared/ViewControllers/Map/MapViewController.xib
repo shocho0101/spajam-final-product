@@ -10,6 +10,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapViewController" customModule="spajam_final_product" customModuleProvider="target">
             <connections>
+                <outlet property="cardView" destination="A4Q-eF-PVR" id="O10-8d-X3Y"/>
                 <outlet property="mapView" destination="LqS-Ay-oNU" id="aLF-M3-k2v"/>
                 <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
             </connections>
@@ -22,7 +23,7 @@
                 <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" showsUserLocation="YES" translatesAutoresizingMaskIntoConstraints="NO" id="LqS-Ay-oNU">
                     <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                 </mapView>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4Q-eF-PVR" customClass="CardView" customModule="spajam_final_product" customModuleProvider="target">
+                <view hidden="YES" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="A4Q-eF-PVR" customClass="CardView" customModule="spajam_final_product" customModuleProvider="target">
                     <rect key="frame" x="24" y="762" width="366" height="92"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>

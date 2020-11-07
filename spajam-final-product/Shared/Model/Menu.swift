@@ -16,6 +16,6 @@ struct Menu: Codable {
 
 extension Menu: ModelMockable {
     static var mock: Menu {
-        return .init(menuId: 1, price: 999, menuName: "ごはーん", imageUrl: "https://placehold.jp/150x150.png")
+        return .init(menuId: 1, price: 1, menuName: "ごはーん", imageUrl: "https://placehold.jp/150x150.png")
     }
 }

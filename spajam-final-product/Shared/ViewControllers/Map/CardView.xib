@@ -30,20 +30,20 @@
                 <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="b0x-BA-qGB">
                     <rect key="frame" x="108" y="16" width="195" height="60"/>
                     <subviews>
-                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Labelll" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUx-iu-1z0">
-                            <rect key="frame" x="0.0" y="0.0" width="73.5" height="29"/>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wUx-iu-1z0">
+                            <rect key="frame" x="0.0" y="0.0" width="5.5" height="29"/>
                             <fontDescription key="fontDescription" type="boldSystem" pointSize="24"/>
                             <nil key="textColor"/>
                             <nil key="highlightedColor"/>
                         </label>
                         <stackView opaque="NO" contentMode="scaleToFill" spacing="4" translatesAutoresizingMaskIntoConstraints="NO" id="Rqd-5D-63e">
-                            <rect key="frame" x="0.0" y="43" width="71.5" height="17"/>
+                            <rect key="frame" x="0.0" y="43" width="37.5" height="17"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="46C-Xi-7Nh">
                                     <rect key="frame" x="0.0" y="0.0" width="30" height="17"/>
                                 </button>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyD-dd-4rx">
-                                    <rect key="frame" x="34" y="0.0" width="37.5" height="17"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text=" " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DyD-dd-4rx">
+                                    <rect key="frame" x="34" y="0.0" width="3.5" height="17"/>
                                     <fontDescription key="fontDescription" type="boldSystem" pointSize="14"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>

@@ -15,5 +15,6 @@ class ShopMapAnnotation: MKPointAnnotation {
     init(shop: Shop) {
         self.shop = shop
         super.init()
+        title = shop.shopName
     }
 }
