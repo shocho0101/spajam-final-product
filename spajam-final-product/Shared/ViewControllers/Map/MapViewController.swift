@@ -18,9 +18,9 @@ class MapViewController: UIViewController {
     let action = DataGateway.getAction(GetShopsDataGatewayAction.self, useMock: true)
     
     
-    @IBOutlet var mapView: MKMapView!
-    
+    @IBOutlet var mapView: MKMapView!    
     let locationManager: CLLocationManager = CLLocationManager()
+    @IBOutlet var cardView: CardView!
     
     init() {
         super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
@@ -72,6 +72,13 @@ class MapViewController: UIViewController {
     
     @IBAction func currentButtonTap() {
         setCurrentLocation()
+    }
+
+    func setCardView(shop:Shop) {
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: .transitionCrossDissolve, animations: {
+            self.cardView.isHidden = false
+            self.cardView.setShop(shop: shop)
+        })
     }
 }
 

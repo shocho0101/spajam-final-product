@@ -17,6 +17,10 @@
 		CA286C0F2556C4BD00FADD71 /* GetShopDataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286C0E2556C4BD00FADD71 /* GetShopDataGatewayAction.swift */; };
 		CA286C122556C76500FADD71 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286C0A2556C38800FADD71 /* MenuListViewModel.swift */; };
 		CA286C152556C7B500FADD71 /* GetShopDataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286C0E2556C4BD00FADD71 /* GetShopDataGatewayAction.swift */; };
+		60EF79D12556D4E9006B6E9D /* BalloonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF79D02556D4E9006B6E9D /* BalloonView.swift */; };
+		60EF79D52556DD9D006B6E9D /* BalloonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60EF79D42556DD9D006B6E9D /* BalloonView.xib */; };
+		60EF79DB2556E3BF006B6E9D /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60EF79DA2556E3BF006B6E9D /* CardView.xib */; };
+		60EF79DF2556E639006B6E9D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF79DE2556E639006B6E9D /* CardView.swift */; };
 		CA4185B9255691B2006433B8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185B8255691B2006433B8 /* RxSwift */; };
 		CA4185BB255691B2006433B8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185BA255691B2006433B8 /* RxCocoa */; };
 		CA4185BD255691B2006433B8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185BC255691B2006433B8 /* RxRelay */; };
@@ -112,6 +116,10 @@
 		CA286BF42556BDE900FADD71 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		CA286C0A2556C38800FADD71 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
 		CA286C0E2556C4BD00FADD71 /* GetShopDataGatewayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShopDataGatewayAction.swift; sourceTree = "<group>"; };
+		60EF79D02556D4E9006B6E9D /* BalloonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonView.swift; sourceTree = "<group>"; };
+		60EF79D42556DD9D006B6E9D /* BalloonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalloonView.xib; sourceTree = "<group>"; };
+		60EF79DA2556E3BF006B6E9D /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		60EF79DE2556E639006B6E9D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CA4185E125569F37006433B8 /* KaikaiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaikaiAPI.swift; sourceTree = "<group>"; };
 		CA4185E82556A090006433B8 /* GetShopsDataGatewayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShopsDataGatewayAction.swift; sourceTree = "<group>"; };
 		CA41861A2556B2C2006433B8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -224,6 +232,47 @@
 				CA286C0E2556C4BD00FADD71 /* GetShopDataGatewayAction.swift */,
 			);
 			path = DataGateway;
+			sourceTree = "<group>";
+		};
+		CA4186182556B29C006433B8 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				CA4186292556B2E2006433B8 /* Menu */,
+				CA4186222556B2C9006433B8 /* MenuList */,
+				CA4186192556B2AF006433B8 /* Map */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		CA4186192556B2AF006433B8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				CA41861A2556B2C2006433B8 /* MapViewController.swift */,
+				CA41861B2556B2C2006433B8 /* MapViewController.xib */,
+				60EF79D02556D4E9006B6E9D /* BalloonView.swift */,
+				60EF79D42556DD9D006B6E9D /* BalloonView.xib */,
+				60EF79DA2556E3BF006B6E9D /* CardView.xib */,
+				60EF79DE2556E639006B6E9D /* CardView.swift */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		CA4186222556B2C9006433B8 /* MenuList */ = {
+			isa = PBXGroup;
+			children = (
+				CA4186232556B2DB006433B8 /* MenuListViewController.swift */,
+				CA4186242556B2DB006433B8 /* MenuListViewController.xib */,
+			);
+			path = MenuList;
+			sourceTree = "<group>";
+		};
+		CA4186292556B2E2006433B8 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				CA41862A2556B2EF006433B8 /* MenuViewController.swift */,
+				CA41862B2556B2EF006433B8 /* MenuViewController.xib */,
+			);
+			path = Menu;
 			sourceTree = "<group>";
 		};
 		CAAFB71C253B131600B26DE2 = {
@@ -495,12 +544,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3527A642556B7BE00836361 /* MenuViewController.xib in Resources */,
+				CA4186262556B2DB006433B8 /* MenuListViewController.xib in Resources */,
+				CA41862D2556B2EF006433B8 /* MenuViewController.xib in Resources */,
+				CAAFB735253B131900B26DE2 /* LaunchScreen.storyboard in Resources */,
+				60EF79DB2556E3BF006B6E9D /* CardView.xib in Resources */,
 				CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */,
 				D3F72BFB2556EFCE0002D5BB /* ShopMapAnnotationView.xib in Resources */,
 				D3527A622556B7BE00836361 /* MapViewController.xib in Resources */,
 				D3D144C82556D6F30062E3BB /* GuideChildViewController.xib in Resources */,
 				CA286BF62556BDE900FADD71 /* MenuTableViewCell.xib in Resources */,
+				60EF79D52556DD9D006B6E9D /* BalloonView.xib in Resources */,
+				CA41861D2556B2C2006433B8 /* MapViewController.xib in Resources */,
 				D3527A5C2556B7BE00836361 /* MenuListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -525,12 +579,22 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+<<<<<<< HEAD
 				D3527A602556B7BE00836361 /* MapViewController.swift in Sources */,
 				D3D144C72556D6F30062E3BB /* GuideChildViewController.swift in Sources */,
 				CA286C0F2556C4BD00FADD71 /* GetShopDataGatewayAction.swift in Sources */,
+=======
+				CA41862C2556B2EF006433B8 /* MenuViewController.swift in Sources */,
+				CA4186252556B2DB006433B8 /* MenuListViewController.swift in Sources */,
+				D31401D925567CB300C30923 /* DataGatewayAction.swift in Sources */,
+				D31401D825567CB300C30923 /* DataGateway.swift in Sources */,
+				60EF79DF2556E639006B6E9D /* CardView.swift in Sources */,
+>>>>>>> f742941e75ba854efc9476505807aaddbc86ad0c
 				CA4185E92556A090006433B8 /* GetShopsDataGatewayAction.swift in Sources */,
 				D379165B25568F2F0015BE4F /* Menu.swift in Sources */,
-				D3527A6E2556B83400836361 /* DataGatewayAction.swift in Sources */,
+				60EF79D12556D4E9006B6E9D /* BalloonView.swift in Sources */,
+				CA41861C2556B2C2006433B8 /* MapViewController.swift in Sources */,
+				D3527A6E2556B83400836361 /* DataGatewayAction.swift in Sources */, main
 				CAFC4BB32554320E00EC056A /* AppError.swift in Sources */,
 				CA4185E225569F37006433B8 /* KaikaiAPI.swift in Sources */,
 				D3527A742556B83700836361 /* DataGateway.swift in Sources */,
