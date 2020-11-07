@@ -15,6 +15,8 @@ final class PayService: NSObject {
     
     private let didSuccessPaymentServiceRelay: PublishRelay<Void> = .init()
     
+    private weak var viewController: PKPaymentAuthorizationViewController?
+    
     var didSuccessPaymentService: Observable<Void> {
         didSuccessPaymentServiceRelay.asObservable()
     }
@@ -48,11 +50,13 @@ final class PayService: NSObject {
         }
         paymentController.delegate = self
         viewController.present(paymentController, animated: true, completion: nil)
+        self.viewController = paymentController
     }
 }
 
 extension PayService: PKPaymentAuthorizationViewControllerDelegate {
     func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
+        viewController?.dismiss(animated: true, completion: nil)
         didSuccessPaymentServiceRelay.accept(())
     }
 }
