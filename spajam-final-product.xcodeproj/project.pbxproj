@@ -25,6 +25,8 @@
 		D300636725569F5000944A15 /* Action in Frameworks */ = {isa = PBXBuildFile; productRef = D300636625569F5000944A15 /* Action */; };
 		D300636925569F5000944A15 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D300636825569F5000944A15 /* Moya */; };
 		D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
+		D341EA3F2556C6E60009B25F /* CircleBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341EA3E2556C6E60009B25F /* CircleBorderButton.swift */; };
+		D341EA402556C6E60009B25F /* CircleBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341EA3E2556C6E60009B25F /* CircleBorderButton.swift */; };
 		D3527A322556B58200836361 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185D725569EE4006433B8 /* RxSwift */; };
 		D3527A352556B58200836361 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185DD25569EE4006433B8 /* RxMoya */; };
 		D3527A4F2556B79800836361 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = D3527A4E2556B79800836361 /* PKHUD */; };
@@ -103,6 +105,7 @@
 		D31401D425567CB300C30923 /* DataGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGateway.swift; sourceTree = "<group>"; };
 		D31401D525567CB300C30923 /* DataGatewayAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGatewayAction.swift; sourceTree = "<group>"; };
 		D31401D725567CB300C30923 /* ModelMockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMockable.swift; sourceTree = "<group>"; };
+		D341EA3E2556C6E60009B25F /* CircleBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBorderButton.swift; sourceTree = "<group>"; };
 		D3527A542556B7BE00836361 /* MenuListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuListViewController.xib; sourceTree = "<group>"; };
 		D3527A552556B7BE00836361 /* MenuListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListViewController.swift; sourceTree = "<group>"; };
 		D3527A572556B7BE00836361 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -271,6 +274,7 @@
 			children = (
 				D3527A5A2556B7BE00836361 /* MenuViewController.xib */,
 				D3527A5B2556B7BE00836361 /* MenuViewController.swift */,
+				D341EA3E2556C6E60009B25F /* CircleBorderButton.swift */,
 			);
 			path = Menu;
 			sourceTree = "<group>";
@@ -454,6 +458,7 @@
 				CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */,
 				D38F780025569B1400E1B26E /* PayService.swift in Sources */,
 				CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */,
+				D341EA3F2556C6E60009B25F /* CircleBorderButton.swift in Sources */,
 				D3527A5E2556B7BE00836361 /* MenuListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -475,6 +480,7 @@
 				D3527A772556B83700836361 /* DataGateway.swift in Sources */,
 				D3816BB32556890F0069BF53 /* AppError.swift in Sources */,
 				D3527A7D2556BA2000836361 /* KaikaiAPI.swift in Sources */,
+				D341EA402556C6E60009B25F /* CircleBorderButton.swift in Sources */,
 				D3527A7A2556B83A00836361 /* GetShopsDataGatewayAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
