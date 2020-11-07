@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		60EF79D12556D4E9006B6E9D /* BalloonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF79D02556D4E9006B6E9D /* BalloonView.swift */; };
 		60EF79D52556DD9D006B6E9D /* BalloonView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60EF79D42556DD9D006B6E9D /* BalloonView.xib */; };
+		60EF79DB2556E3BF006B6E9D /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 60EF79DA2556E3BF006B6E9D /* CardView.xib */; };
+		60EF79DF2556E639006B6E9D /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 60EF79DE2556E639006B6E9D /* CardView.swift */; };
 		CA4185B9255691B2006433B8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185B8255691B2006433B8 /* RxSwift */; };
 		CA4185BB255691B2006433B8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185BA255691B2006433B8 /* RxCocoa */; };
 		CA4185BD255691B2006433B8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185BC255691B2006433B8 /* RxRelay */; };
@@ -91,6 +93,8 @@
 /* Begin PBXFileReference section */
 		60EF79D02556D4E9006B6E9D /* BalloonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BalloonView.swift; sourceTree = "<group>"; };
 		60EF79D42556DD9D006B6E9D /* BalloonView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BalloonView.xib; sourceTree = "<group>"; };
+		60EF79DA2556E3BF006B6E9D /* CardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
+		60EF79DE2556E639006B6E9D /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		CA4185E125569F37006433B8 /* KaikaiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaikaiAPI.swift; sourceTree = "<group>"; };
 		CA4185E82556A090006433B8 /* GetShopsDataGatewayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShopsDataGatewayAction.swift; sourceTree = "<group>"; };
 		CA41861A2556B2C2006433B8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -194,6 +198,8 @@
 				CA41861B2556B2C2006433B8 /* MapViewController.xib */,
 				60EF79D02556D4E9006B6E9D /* BalloonView.swift */,
 				60EF79D42556DD9D006B6E9D /* BalloonView.xib */,
+				60EF79DA2556E3BF006B6E9D /* CardView.xib */,
+				60EF79DE2556E639006B6E9D /* CardView.swift */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -463,7 +469,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3527A642556B7BE00836361 /* MenuViewController.xib in Resources */,
+				CA4186262556B2DB006433B8 /* MenuListViewController.xib in Resources */,
+				CA41862D2556B2EF006433B8 /* MenuViewController.xib in Resources */,
+				CAAFB735253B131900B26DE2 /* LaunchScreen.storyboard in Resources */,
+				60EF79DB2556E3BF006B6E9D /* CardView.xib in Resources */,
 				CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */,
 				60EF79D52556DD9D006B6E9D /* BalloonView.xib in Resources */,
 				CA41861D2556B2C2006433B8 /* MapViewController.xib in Resources */,
@@ -489,7 +498,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3527A602556B7BE00836361 /* MapViewController.swift in Sources */,
+				CA41862C2556B2EF006433B8 /* MenuViewController.swift in Sources */,
+				CA4186252556B2DB006433B8 /* MenuListViewController.swift in Sources */,
+				D31401D925567CB300C30923 /* DataGatewayAction.swift in Sources */,
+				D31401D825567CB300C30923 /* DataGateway.swift in Sources */,
+				60EF79DF2556E639006B6E9D /* CardView.swift in Sources */,
 				CA4185E92556A090006433B8 /* GetShopsDataGatewayAction.swift in Sources */,
 				D379165B25568F2F0015BE4F /* Menu.swift in Sources */,
 				60EF79D12556D4E9006B6E9D /* BalloonView.swift in Sources */,

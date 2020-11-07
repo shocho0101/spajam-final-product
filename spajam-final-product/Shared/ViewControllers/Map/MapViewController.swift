@@ -19,6 +19,7 @@ class MapViewController: UIViewController {
     
     
     @IBOutlet var mapView: MKMapView!
+    @IBOutlet var cardView: CardView!
     
     var locationManager: CLLocationManager!
     
@@ -41,6 +42,7 @@ class MapViewController: UIViewController {
         ba.center = view.center
         ba.frame = CGRect(x: 50, y: 50, width: 100, height: 50)
         view.addSubview(ba)
+        cardView.isHidden = true
         getData()
     }
     
@@ -61,13 +63,19 @@ class MapViewController: UIViewController {
     }
     
     func setMapPin(shop: Shop) {
-//        let coordinate = CLLocationCoordinate2D(latitude: shop.latitude, longitude: shop.longitude)
         let coordinate = mapView.userLocation.coordinate
         let pin = MKPointAnnotation()
         pin.title = shop.shopName
         pin.subtitle = shop.capacity.description
         pin.coordinate = coordinate
         mapView.addAnnotation(pin)
+    }
+    
+    func setCardView(shop:Shop) {
+        UIView.animate(withDuration: 1.0, delay: 0.0, options: .transitionCrossDissolve, animations: {
+            self.cardView.isHidden = false
+            self.cardView.setShop(shop: shop)
+        })
     }
     
     @IBAction func currentButtonTap() {
