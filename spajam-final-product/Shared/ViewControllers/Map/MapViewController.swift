@@ -114,16 +114,10 @@ extension MapViewController: MKMapViewDelegate {
         else {
             return nil
         }
-        view.configure(with: annotation.shop)
-        annotationView.translatesAutoresizingMaskIntoConstraints = false
         view.translatesAutoresizingMaskIntoConstraints = false
+        view.configure(with: annotation.shop)
+        view.frame = annotationView.bounds
         annotationView.addSubview(view)
-        NSLayoutConstraint.activate([
-            view.topAnchor.constraint(equalTo: annotationView.topAnchor),
-            view.bottomAnchor.constraint(equalTo: annotationView.bottomAnchor),
-            view.centerXAnchor.constraint(equalTo: annotationView.leadingAnchor),
-            view.trailingAnchor.constraint(equalTo: annotationView.centerXAnchor)
-        ])
         return annotationView
     }
 }
