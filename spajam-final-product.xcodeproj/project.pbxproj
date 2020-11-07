@@ -24,6 +24,8 @@
 		D31401D825567CB300C30923 /* DataGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D425567CB300C30923 /* DataGateway.swift */; };
 		D31401D925567CB300C30923 /* DataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D525567CB300C30923 /* DataGatewayAction.swift */; };
 		D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
+		D379165B25568F2F0015BE4F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165A25568F2F0015BE4F /* Menu.swift */; };
+		D379165F25568F710015BE4F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165E25568F710015BE4F /* Shop.swift */; };
 		D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B672556845A0069BF53 /* AppDelegate.swift */; };
 		D3816B6A2556845A0069BF53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B692556845A0069BF53 /* SceneDelegate.swift */; };
 		D3816B6C2556845A0069BF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B6B2556845A0069BF53 /* ViewController.swift */; };
@@ -71,6 +73,8 @@
 		D31401D425567CB300C30923 /* DataGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGateway.swift; sourceTree = "<group>"; };
 		D31401D525567CB300C30923 /* DataGatewayAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGatewayAction.swift; sourceTree = "<group>"; };
 		D31401D725567CB300C30923 /* ModelMockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMockable.swift; sourceTree = "<group>"; };
+		D379165A25568F2F0015BE4F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
+		D379165E25568F710015BE4F /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		D3816B652556845A0069BF53 /* spajam-final-product-clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spajam-final-product-clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3816B672556845A0069BF53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3816B692556845A0069BF53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -145,7 +149,6 @@
 		D31401D225567CB300C30923 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				D3816B5D25567E950069BF53 /* Pay */,
 				CAAFB731253B131900B26DE2 /* Assets.xcassets */,
 				CAFC4BB22554320E00EC056A /* AppError.swift */,
 				D31401D325567CB300C30923 /* DataGateway */,
@@ -168,15 +171,10 @@
 			isa = PBXGroup;
 			children = (
 				D31401D725567CB300C30923 /* ModelMockable.swift */,
+				D379165A25568F2F0015BE4F /* Menu.swift */,
+				D379165E25568F710015BE4F /* Shop.swift */,
 			);
 			path = Model;
-			sourceTree = "<group>";
-		};
-		D3816B5D25567E950069BF53 /* Pay */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Pay;
 			sourceTree = "<group>";
 		};
 		D3816B662556845A0069BF53 /* spajam-final-product-clip */ = {
@@ -323,9 +321,11 @@
 			files = (
 				D31401D925567CB300C30923 /* DataGatewayAction.swift in Sources */,
 				D31401D825567CB300C30923 /* DataGateway.swift in Sources */,
+				D379165B25568F2F0015BE4F /* Menu.swift in Sources */,
 				CAAFB72D253B131600B26DE2 /* ViewController.swift in Sources */,
 				CAFC4BB32554320E00EC056A /* AppError.swift in Sources */,
 				D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */,
+				D379165F25568F710015BE4F /* Shop.swift in Sources */,
 				CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */,
 				CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */,
 			);
