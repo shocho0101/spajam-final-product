@@ -16,3 +16,15 @@ struct Shop: Codable {
     let capacity: Int
     let currentPopulation: Int
 }
+
+extension Shop: ModelMockable {
+    static var mock: Shop {
+        return .init(shopId: "aaaa",
+                     shopName: "おみーせ",
+                     menus: [.mock, .mock],
+                     latitude: 35.681382,
+                     longitude: 139.76608399999998,
+                     capacity: 100, currentPopulation: 25
+        )
+    }
+}

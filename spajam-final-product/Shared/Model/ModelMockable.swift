@@ -17,3 +17,9 @@ extension ModelMockable where Self: Encodable {
         return try! JSONEncoder().encode(mock)
     }
 }
+
+extension Array: ModelMockable where Element: ModelMockable & Encodable {
+    static var mock: Array<Element> {
+        return [Element.mock, Element.mock, Element.mock]
+    }
+}
