@@ -4,13 +4,19 @@
 //
 //  Created by 張翔 on 2020/11/07.
 //
-
+import Foundation
 import UIKit
 import MapKit
 import CoreLocation
+import RxSwift
+import RxCocoa
+import Action
 
 class MapViewController: UIViewController {
+    
     let disposeBag = DisposeBag()
+    let action = DataGateway.getAction(GetShopsDataGatewayAction.self, useMock: true)
+    
     
     @IBOutlet var mapView: MKMapView!
     
@@ -31,6 +37,11 @@ class MapViewController: UIViewController {
         locationManager = CLLocationManager()
         locationManager.delegate = self
         locationManager!.requestWhenInUseAuthorization()
+        let ba = BalloonView()
+        ba.center = view.center
+        ba.frame = CGRect(x: 50, y: 50, width: 100, height: 50)
+        view.addSubview(ba)
+        getData()
     }
     
     func setCurrentLocation() {
@@ -40,12 +51,23 @@ class MapViewController: UIViewController {
     }
     
     func getData() {
-        let action = DataGateway.getAction(GetShopsDataGatewayAction.self)
-        
-        action.elements.subscribe { shop in
-            shop.
-        }.disposed(by: disposeBag)
-
+        action.execute(1)
+            .subscribe( onNext:{
+                $0.map{
+                    self.setMapPin(shop: $0)
+                }
+            })
+            .disposed(by: disposeBag)
+    }
+    
+    func setMapPin(shop: Shop) {
+//        let coordinate = CLLocationCoordinate2D(latitude: shop.latitude, longitude: shop.longitude)
+        let coordinate = mapView.userLocation.coordinate
+        let pin = MKPointAnnotation()
+        pin.title = shop.shopName
+        pin.subtitle = shop.capacity.description
+        pin.coordinate = coordinate
+        mapView.addAnnotation(pin)
     }
     
     @IBAction func currentButtonTap() {
