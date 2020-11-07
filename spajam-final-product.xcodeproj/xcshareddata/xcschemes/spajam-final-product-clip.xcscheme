@@ -53,7 +53,7 @@
       <EnvironmentVariables>
          <EnvironmentVariable
             key = "_XCAppClipURL"
-            value = "https://choccho.tech/guides?shop_id=1"
+            value = "https://choccho.tech/shops?shop_id=2&amp;table_id=1"
             isEnabled = "YES">
          </EnvironmentVariable>
       </EnvironmentVariables>

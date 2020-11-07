@@ -23,8 +23,6 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             }
         }
         
-        
-        
         window.makeKeyAndVisible()
     }
     
@@ -45,7 +43,9 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
             let shopId = Int(url.queryValue(for: "shop_id")!)!
             window?.rootViewController = GuidePageViewController(shopId: shopId)
         } else {
-            let navigationController = UINavigationController(rootViewController: MenuListViewController())
+            let shopId = Int(url.queryValue(for: "shop_id")!)!
+            let tableId = Int(url.queryValue(for: "table_id")!)!
+            let navigationController = UINavigationController(rootViewController: MenuListViewController(.init(shopId: shopId, tableId: tableId)))
             window?.rootViewController = navigationController
         }
     }

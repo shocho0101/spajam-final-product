@@ -18,6 +18,9 @@ class MenuViewController: UIViewController {
     @IBOutlet weak var priceLabel: UILabel!
     @IBOutlet weak var addCountButton: UIButton!
     @IBOutlet weak var subtractCountButton: UIButton!
+    @IBOutlet weak var imageView: UIImageView!
+    @IBOutlet weak var totalPriceLabel: UILabel!
+    @IBOutlet weak var totalCountLabel: UILabel!
     
     let menu: Menu
     
@@ -25,6 +28,7 @@ class MenuViewController: UIViewController {
     
     private let disposeBag: DisposeBag = .init()
     private let addCartRelay: BehaviorRelay<(menu: Menu, count: Int)>
+    private let isFirstAddCart: Bool
     var addCart: Observable<(menu: Menu, count: Int)> {
         addCartRelay.asObservable()
     }
@@ -33,6 +37,7 @@ class MenuViewController: UIViewController {
         self.menu = menu
         self.countRelay = .init(value: count)
         self.addCartRelay = .init(value: (menu, count))
+        isFirstAddCart = count == 0 ? true : false
         super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
     }
     
@@ -43,6 +48,10 @@ class MenuViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        addCartButton.rx.tap
+            .subscribe(onNext: {[navigationController] in navigationController?.popViewController(animated: true)}).disposed(by: disposeBag)
+        
         addCartButton.rx.tap
             .map { _ in self.menu }
             .withLatestFrom(countRelay) { menu, count in
@@ -59,7 +68,8 @@ class MenuViewController: UIViewController {
             }
             .bind(to: countLabel.rx.text)
             .disposed(by: disposeBag)
-        priceLabel.text = formatter.string(from: NSNumber(value: menu.price))
+        priceLabel.text = "¥\(formatter.string(from: NSNumber(value: menu.price)) ?? "999")"
+        imageView.kf.setImage(with: URL(string: menu.imageUrl))
         Observable.merge(
             addCountButton.rx.tap.map { 1 },
             subtractCountButton.rx.tap.map { -1 }
@@ -67,8 +77,22 @@ class MenuViewController: UIViewController {
         .withLatestFrom(countRelay) { diff, value in
             value + diff
         }
+        .map { $0 >= 0 ? $0 : 0}
         .bind(to: countRelay)
         .disposed(by: disposeBag)
+        countRelay
+            .map { [isFirstAddCart] in
+                if isFirstAddCart {
+                    return "\($0)枚をカートに追加"
+                } else {
+                    return "カートを更新"
+                }
+            }.bind(to: totalCountLabel.rx.text)
+            .disposed(by: disposeBag)
+        countRelay.map { [menu] in String($0 * menu.price) }
+            .map { "¥" + $0 }
+            .bind(to: totalPriceLabel.rx.text)
+            .disposed(by: disposeBag)
     }
     
     override func viewDidLayoutSubviews() {

@@ -13,7 +13,7 @@ enum KaikaiAPI: TargetType {
     case getShop(shopId: Int, tableId: Int, deviceId: String)
     
     var baseURL: URL {
-        return URL(string: "https://53a94c53f941.ngrok.io")!
+        return URL(string: "https://blooming-ravine-19203.herokuapp.com")!
     }
     
     var path: String {

@@ -19,7 +19,7 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         self.window = window
         
         let tabBarController = UITabBarController()
-        tabBarController.viewControllers = [MenuListViewController(), MapViewController()]
+        tabBarController.viewControllers = [MenuListViewController(.init(shopId: 1, tableId: 1)), MapViewController()]
         window.rootViewController = tabBarController
         window.makeKeyAndVisible()
     }
