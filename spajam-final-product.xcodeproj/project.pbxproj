@@ -17,39 +17,53 @@
 		CA4185C6255695CB006433B8 /* Action in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185C5255695CB006433B8 /* Action */; };
 		CA4185CB255695E8006433B8 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185CA255695E8006433B8 /* Moya */; };
 		CA4185CD255695E8006433B8 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185CC255695E8006433B8 /* RxMoya */; };
-		CA4185D425569EE4006433B8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185D325569EE4006433B8 /* RxCocoa */; };
-		CA4185D625569EE4006433B8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185D525569EE4006433B8 /* RxRelay */; };
-		CA4185D825569EE4006433B8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185D725569EE4006433B8 /* RxSwift */; };
-		CA4185DA25569EE4006433B8 /* Action in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185D925569EE4006433B8 /* Action */; };
-		CA4185DC25569EE4006433B8 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185DB25569EE4006433B8 /* Moya */; };
-		CA4185DE25569EE4006433B8 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185DD25569EE4006433B8 /* RxMoya */; };
 		CA4185E225569F37006433B8 /* KaikaiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4185E125569F37006433B8 /* KaikaiAPI.swift */; };
 		CA4185E92556A090006433B8 /* GetShopsDataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4185E82556A090006433B8 /* GetShopsDataGatewayAction.swift */; };
-		CA41861C2556B2C2006433B8 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41861A2556B2C2006433B8 /* MapViewController.swift */; };
-		CA41861D2556B2C2006433B8 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA41861B2556B2C2006433B8 /* MapViewController.xib */; };
-		CA4186252556B2DB006433B8 /* MenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4186232556B2DB006433B8 /* MenuListViewController.swift */; };
-		CA4186262556B2DB006433B8 /* MenuListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA4186242556B2DB006433B8 /* MenuListViewController.xib */; };
-		CA41862C2556B2EF006433B8 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA41862A2556B2EF006433B8 /* MenuViewController.swift */; };
-		CA41862D2556B2EF006433B8 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = CA41862B2556B2EF006433B8 /* MenuViewController.xib */; };
 		CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB728253B131600B26DE2 /* AppDelegate.swift */; };
 		CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAAFB72A253B131600B26DE2 /* SceneDelegate.swift */; };
 		CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
-		CAAFB735253B131900B26DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB733253B131900B26DE2 /* LaunchScreen.storyboard */; };
 		CAFC4BA92554129900EC056A /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CAFC4BA82554129900EC056A /* PKHUD */; };
 		CAFC4BB32554320E00EC056A /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC4BB22554320E00EC056A /* AppError.swift */; };
-		D31401D825567CB300C30923 /* DataGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D425567CB300C30923 /* DataGateway.swift */; };
-		D31401D925567CB300C30923 /* DataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D525567CB300C30923 /* DataGatewayAction.swift */; };
+		D300636125569F5000944A15 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D300636025569F5000944A15 /* RxCocoa */; };
+		D300636325569F5000944A15 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D300636225569F5000944A15 /* RxRelay */; };
+		D300636725569F5000944A15 /* Action in Frameworks */ = {isa = PBXBuildFile; productRef = D300636625569F5000944A15 /* Action */; };
+		D300636925569F5000944A15 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D300636825569F5000944A15 /* Moya */; };
 		D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
+		D341EA3F2556C6E60009B25F /* CircleBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341EA3E2556C6E60009B25F /* CircleBorderButton.swift */; };
+		D341EA402556C6E60009B25F /* CircleBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341EA3E2556C6E60009B25F /* CircleBorderButton.swift */; };
+		D3527A322556B58200836361 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185D725569EE4006433B8 /* RxSwift */; };
+		D3527A352556B58200836361 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185DD25569EE4006433B8 /* RxMoya */; };
+		D3527A4F2556B79800836361 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = D3527A4E2556B79800836361 /* PKHUD */; };
+		D3527A5C2556B7BE00836361 /* MenuListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3527A542556B7BE00836361 /* MenuListViewController.xib */; };
+		D3527A5D2556B7BE00836361 /* MenuListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3527A542556B7BE00836361 /* MenuListViewController.xib */; };
+		D3527A5E2556B7BE00836361 /* MenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3527A552556B7BE00836361 /* MenuListViewController.swift */; };
+		D3527A5F2556B7BE00836361 /* MenuListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3527A552556B7BE00836361 /* MenuListViewController.swift */; };
+		D3527A602556B7BE00836361 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3527A572556B7BE00836361 /* MapViewController.swift */; };
+		D3527A612556B7BE00836361 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3527A572556B7BE00836361 /* MapViewController.swift */; };
+		D3527A622556B7BE00836361 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3527A582556B7BE00836361 /* MapViewController.xib */; };
+		D3527A632556B7BE00836361 /* MapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3527A582556B7BE00836361 /* MapViewController.xib */; };
+		D3527A642556B7BE00836361 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3527A5A2556B7BE00836361 /* MenuViewController.xib */; };
+		D3527A652556B7BE00836361 /* MenuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3527A5A2556B7BE00836361 /* MenuViewController.xib */; };
+		D3527A662556B7BE00836361 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3527A5B2556B7BE00836361 /* MenuViewController.swift */; };
+		D3527A672556B7BE00836361 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3527A5B2556B7BE00836361 /* MenuViewController.swift */; };
+		D3527A6E2556B83400836361 /* DataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D525567CB300C30923 /* DataGatewayAction.swift */; };
+		D3527A712556B83400836361 /* DataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D525567CB300C30923 /* DataGatewayAction.swift */; };
+		D3527A742556B83700836361 /* DataGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D425567CB300C30923 /* DataGateway.swift */; };
+		D3527A772556B83700836361 /* DataGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D425567CB300C30923 /* DataGateway.swift */; };
+		D3527A7A2556B83A00836361 /* GetShopsDataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4185E82556A090006433B8 /* GetShopsDataGatewayAction.swift */; };
+		D3527A7D2556BA2000836361 /* KaikaiAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4185E125569F37006433B8 /* KaikaiAPI.swift */; };
 		D379165B25568F2F0015BE4F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165A25568F2F0015BE4F /* Menu.swift */; };
 		D379165F25568F710015BE4F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165E25568F710015BE4F /* Shop.swift */; };
 		D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B672556845A0069BF53 /* AppDelegate.swift */; };
 		D3816B6A2556845A0069BF53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B692556845A0069BF53 /* SceneDelegate.swift */; };
-		D3816B6C2556845A0069BF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B6B2556845A0069BF53 /* ViewController.swift */; };
-		D3816B6F2556845A0069BF53 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3816B6D2556845A0069BF53 /* Main.storyboard */; };
-		D3816B742556845B0069BF53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3816B722556845B0069BF53 /* LaunchScreen.storyboard */; };
 		D3816B792556845B0069BF53 /* spajam-final-product-clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = D3816B652556845A0069BF53 /* spajam-final-product-clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D3816B81255684D50069BF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
-		D3816BA5255686970069BF53 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = D3816BA4255686970069BF53 /* PKHUD */; };
+		D3816BB32556890F0069BF53 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC4BB22554320E00EC056A /* AppError.swift */; };
+		D38F780025569B1400E1B26E /* PayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F77FF25569B1400E1B26E /* PayService.swift */; };
+		D38F780125569B1400E1B26E /* PayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F77FF25569B1400E1B26E /* PayService.swift */; };
+		D38F780925569B2400E1B26E /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165E25568F710015BE4F /* Shop.swift */; };
+		D38F780A25569B2400E1B26E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165A25568F2F0015BE4F /* Menu.swift */; };
+		D38F780B25569B2400E1B26E /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -99,17 +113,24 @@
 		D31401D425567CB300C30923 /* DataGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGateway.swift; sourceTree = "<group>"; };
 		D31401D525567CB300C30923 /* DataGatewayAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGatewayAction.swift; sourceTree = "<group>"; };
 		D31401D725567CB300C30923 /* ModelMockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMockable.swift; sourceTree = "<group>"; };
+		D341EA3E2556C6E60009B25F /* CircleBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBorderButton.swift; sourceTree = "<group>"; };
+		D3527A542556B7BE00836361 /* MenuListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuListViewController.xib; sourceTree = "<group>"; };
+		D3527A552556B7BE00836361 /* MenuListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListViewController.swift; sourceTree = "<group>"; };
+		D3527A572556B7BE00836361 /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		D3527A582556B7BE00836361 /* MapViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MapViewController.xib; sourceTree = "<group>"; };
+		D3527A5A2556B7BE00836361 /* MenuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuViewController.xib; sourceTree = "<group>"; };
+		D3527A5B2556B7BE00836361 /* MenuViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		D379165A25568F2F0015BE4F /* Menu.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Menu.swift; sourceTree = "<group>"; };
 		D379165E25568F710015BE4F /* Shop.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Shop.swift; sourceTree = "<group>"; };
 		D3816B652556845A0069BF53 /* spajam-final-product-clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spajam-final-product-clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3816B672556845A0069BF53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3816B692556845A0069BF53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3816B6B2556845A0069BF53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		D3816B6E2556845A0069BF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		D3816B732556845B0069BF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3816B752556845B0069BF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3816B762556845B0069BF53 /* spajam_final_product_clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = spajam_final_product_clip.entitlements; sourceTree = "<group>"; };
 		D3816B84255684FA0069BF53 /* spajam-final-product.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "spajam-final-product.entitlements"; sourceTree = "<group>"; };
+		D3816BA8255687B80069BF53 /* PayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
+		D38F77FF25569B1400E1B26E /* PayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -131,13 +152,13 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				CA4185DA25569EE4006433B8 /* Action in Frameworks */,
-				CA4185D625569EE4006433B8 /* RxRelay in Frameworks */,
-				CA4185DC25569EE4006433B8 /* Moya in Frameworks */,
-				CA4185D425569EE4006433B8 /* RxCocoa in Frameworks */,
-				CA4185DE25569EE4006433B8 /* RxMoya in Frameworks */,
-				CA4185D825569EE4006433B8 /* RxSwift in Frameworks */,
-				D3816BA5255686970069BF53 /* PKHUD in Frameworks */,
+				D3527A352556B58200836361 /* RxMoya in Frameworks */,
+				D300636725569F5000944A15 /* Action in Frameworks */,
+				D3527A322556B58200836361 /* RxSwift in Frameworks */,
+				D300636325569F5000944A15 /* RxRelay in Frameworks */,
+				D300636925569F5000944A15 /* Moya in Frameworks */,
+				D300636125569F5000944A15 /* RxCocoa in Frameworks */,
+				D3527A4F2556B79800836361 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -209,6 +230,7 @@
 				D3816B662556845A0069BF53 /* spajam-final-product-clip */,
 				CAAFB726253B131600B26DE2 /* Products */,
 				D3816BA3255686970069BF53 /* Frameworks */,
+				D38F77F925569AA100E1B26E /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -236,7 +258,8 @@
 		D31401D225567CB300C30923 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
-				CA4186182556B29C006433B8 /* ViewControllers */,
+				D3527A522556B7BE00836361 /* ViewControllers */,
+				D38F77FE25569B1400E1B26E /* Pay */,
 				CAAFB731253B131900B26DE2 /* Assets.xcassets */,
 				CAFC4BB22554320E00EC056A /* AppError.swift */,
 				D31401D325567CB300C30923 /* DataGateway */,
@@ -267,13 +290,49 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
+		D3527A522556B7BE00836361 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				D3527A532556B7BE00836361 /* MenuList */,
+				D3527A562556B7BE00836361 /* Map */,
+				D3527A592556B7BE00836361 /* Menu */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		D3527A532556B7BE00836361 /* MenuList */ = {
+			isa = PBXGroup;
+			children = (
+				D3527A542556B7BE00836361 /* MenuListViewController.xib */,
+				D3527A552556B7BE00836361 /* MenuListViewController.swift */,
+			);
+			path = MenuList;
+			sourceTree = "<group>";
+		};
+		D3527A562556B7BE00836361 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				D3527A572556B7BE00836361 /* MapViewController.swift */,
+				D3527A582556B7BE00836361 /* MapViewController.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		D3527A592556B7BE00836361 /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D3527A5A2556B7BE00836361 /* MenuViewController.xib */,
+				D3527A5B2556B7BE00836361 /* MenuViewController.swift */,
+				D341EA3E2556C6E60009B25F /* CircleBorderButton.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
 		D3816B662556845A0069BF53 /* spajam-final-product-clip */ = {
 			isa = PBXGroup;
 			children = (
 				D3816B672556845A0069BF53 /* AppDelegate.swift */,
 				D3816B692556845A0069BF53 /* SceneDelegate.swift */,
-				D3816B6B2556845A0069BF53 /* ViewController.swift */,
-				D3816B6D2556845A0069BF53 /* Main.storyboard */,
 				D3816B722556845B0069BF53 /* LaunchScreen.storyboard */,
 				D3816B752556845B0069BF53 /* Info.plist */,
 				D3816B762556845B0069BF53 /* spajam_final_product_clip.entitlements */,
@@ -286,6 +345,28 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D38F77F925569AA100E1B26E /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				D3816BA8255687B80069BF53 /* PayService.swift */,
+				CA41862A2556B2EF006433B8 /* MenuViewController.swift */,
+				CA4186232556B2DB006433B8 /* MenuListViewController.swift */,
+				CA41861A2556B2C2006433B8 /* MapViewController.swift */,
+				CA4186242556B2DB006433B8 /* MenuListViewController.xib */,
+				CA41862B2556B2EF006433B8 /* MenuViewController.xib */,
+				CA41861B2556B2C2006433B8 /* MapViewController.xib */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		D38F77FE25569B1400E1B26E /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				D38F77FF25569B1400E1B26E /* PayService.swift */,
+			);
+			path = Pay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -333,13 +414,9 @@
 			);
 			name = "spajam-final-product-clip";
 			packageProductDependencies = (
-				D3816BA4255686970069BF53 /* PKHUD */,
-				CA4185D325569EE4006433B8 /* RxCocoa */,
-				CA4185D525569EE4006433B8 /* RxRelay */,
 				CA4185D725569EE4006433B8 /* RxSwift */,
-				CA4185D925569EE4006433B8 /* Action */,
-				CA4185DB25569EE4006433B8 /* Moya */,
 				CA4185DD25569EE4006433B8 /* RxMoya */,
+				D3527A4E2556B79800836361 /* PKHUD */,
 			);
 			productName = "spajam-final-product-clip";
 			productReference = D3816B652556845A0069BF53 /* spajam-final-product-clip.app */;
@@ -399,6 +476,7 @@
 				CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */,
 				60EF79D52556DD9D006B6E9D /* BalloonView.xib in Resources */,
 				CA41861D2556B2C2006433B8 /* MapViewController.xib in Resources */,
+				D3527A5C2556B7BE00836361 /* MenuListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,9 +484,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3816B742556845B0069BF53 /* LaunchScreen.storyboard in Resources */,
+				D3527A652556B7BE00836361 /* MenuViewController.xib in Resources */,
 				D3816B81255684D50069BF53 /* Assets.xcassets in Resources */,
-				D3816B6F2556845A0069BF53 /* Main.storyboard in Resources */,
+				D3527A632556B7BE00836361 /* MapViewController.xib in Resources */,
+				D3527A5D2556B7BE00836361 /* MenuListViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -428,12 +507,18 @@
 				D379165B25568F2F0015BE4F /* Menu.swift in Sources */,
 				60EF79D12556D4E9006B6E9D /* BalloonView.swift in Sources */,
 				CA41861C2556B2C2006433B8 /* MapViewController.swift in Sources */,
+				D3527A6E2556B83400836361 /* DataGatewayAction.swift in Sources */, main
 				CAFC4BB32554320E00EC056A /* AppError.swift in Sources */,
 				CA4185E225569F37006433B8 /* KaikaiAPI.swift in Sources */,
+				D3527A742556B83700836361 /* DataGateway.swift in Sources */,
 				D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */,
 				D379165F25568F710015BE4F /* Shop.swift in Sources */,
+				D3527A662556B7BE00836361 /* MenuViewController.swift in Sources */,
 				CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */,
+				D38F780025569B1400E1B26E /* PayService.swift in Sources */,
 				CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */,
+				D341EA3F2556C6E60009B25F /* CircleBorderButton.swift in Sources */,
+				D3527A5E2556B7BE00836361 /* MenuListViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -441,9 +526,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3816B6C2556845A0069BF53 /* ViewController.swift in Sources */,
+				D3527A712556B83400836361 /* DataGatewayAction.swift in Sources */,
 				D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */,
+				D38F780A25569B2400E1B26E /* Menu.swift in Sources */,
+				D3527A612556B7BE00836361 /* MapViewController.swift in Sources */,
+				D3527A672556B7BE00836361 /* MenuViewController.swift in Sources */,
+				D3527A5F2556B7BE00836361 /* MenuListViewController.swift in Sources */,
 				D3816B6A2556845A0069BF53 /* SceneDelegate.swift in Sources */,
+				D38F780B25569B2400E1B26E /* ModelMockable.swift in Sources */,
+				D38F780925569B2400E1B26E /* Shop.swift in Sources */,
+				D38F780125569B1400E1B26E /* PayService.swift in Sources */,
+				D3527A772556B83700836361 /* DataGateway.swift in Sources */,
+				D3816BB32556890F0069BF53 /* AppError.swift in Sources */,
+				D3527A7D2556BA2000836361 /* KaikaiAPI.swift in Sources */,
+				D341EA402556C6E60009B25F /* CircleBorderButton.swift in Sources */,
+				D3527A7A2556B83A00836361 /* GetShopsDataGatewayAction.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -464,14 +561,6 @@
 				CAAFB734253B131900B26DE2 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
-			sourceTree = "<group>";
-		};
-		D3816B6D2556845A0069BF53 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				D3816B6E2556845A0069BF53 /* Base */,
-			);
-			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 		D3816B722556845B0069BF53 /* LaunchScreen.storyboard */ = {
@@ -631,7 +720,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "spajam-final-product/spajam-final-product.entitlements";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = "spajam-final-product/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -640,6 +730,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "spajam-final-product";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -789,30 +880,10 @@
 			package = CA4185C9255695E8006433B8 /* XCRemoteSwiftPackageReference "Moya" */;
 			productName = RxMoya;
 		};
-		CA4185D325569EE4006433B8 /* RxCocoa */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxCocoa;
-		};
-		CA4185D525569EE4006433B8 /* RxRelay */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
-			productName = RxRelay;
-		};
 		CA4185D725569EE4006433B8 /* RxSwift */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
 			productName = RxSwift;
-		};
-		CA4185D925569EE4006433B8 /* Action */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CA4185C4255695CB006433B8 /* XCRemoteSwiftPackageReference "Action" */;
-			productName = Action;
-		};
-		CA4185DB25569EE4006433B8 /* Moya */ = {
-			isa = XCSwiftPackageProductDependency;
-			package = CA4185C9255695E8006433B8 /* XCRemoteSwiftPackageReference "Moya" */;
-			productName = Moya;
 		};
 		CA4185DD25569EE4006433B8 /* RxMoya */ = {
 			isa = XCSwiftPackageProductDependency;
@@ -824,7 +895,27 @@
 			package = CAFC4BA72554129900EC056A /* XCRemoteSwiftPackageReference "PKHUD" */;
 			productName = PKHUD;
 		};
-		D3816BA4255686970069BF53 /* PKHUD */ = {
+		D300636025569F5000944A15 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D300636225569F5000944A15 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		D300636625569F5000944A15 /* Action */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185C4255695CB006433B8 /* XCRemoteSwiftPackageReference "Action" */;
+			productName = Action;
+		};
+		D300636825569F5000944A15 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185C9255695E8006433B8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		D3527A4E2556B79800836361 /* PKHUD */ = {
 			isa = XCSwiftPackageProductDependency;
 			package = CAFC4BA72554129900EC056A /* XCRemoteSwiftPackageReference "PKHUD" */;
 			productName = PKHUD;
