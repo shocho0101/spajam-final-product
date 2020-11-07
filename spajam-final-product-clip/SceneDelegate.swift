@@ -17,10 +17,37 @@ class SceneDelegate: UIResponder, UIWindowSceneDelegate {
         let window = UIWindow(windowScene: windowScene)
         self.window = window
         
-        let navigationController = UINavigationController(rootViewController: MenuListViewController())
+        if let activity = connectionOptions.userActivities.filter({ $0.activityType == NSUserActivityTypeBrowsingWeb }).first {
+            if let url = activity.webpageURL {
+                setViewController(url: url)
+            }
+        }
         
-        window.rootViewController = navigationController
+        
+        
         window.makeKeyAndVisible()
+    }
+    
+    func scene(_ scene: UIScene, continue userActivity: NSUserActivity) {
+        
+        guard userActivity.activityType == NSUserActivityTypeBrowsingWeb,
+              let incomingURL = userActivity.webpageURL else {
+            return
+        }
+        
+        setViewController(url: incomingURL)
+    }
+    
+    func setViewController(url: URL) {
+        guard let components = NSURLComponents(url: url, resolvingAgainstBaseURL: true) else { return }
+        
+        if components.path == "/guides" {
+            let shopId = Int(url.queryValue(for: "shop_id")!)!
+            window?.rootViewController = GuidePageViewController(shopId: shopId)
+        } else {
+            let navigationController = UINavigationController(rootViewController: MenuListViewController())
+            window?.rootViewController = navigationController
+        }
     }
 
     func sceneDidDisconnect(_ scene: UIScene) {
