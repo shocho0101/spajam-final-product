@@ -6,10 +6,18 @@
 //
 
 import Foundation
+import RxSwift
+import RxCocoa
 import PassKit
 
-final class PayService {
-    var paymentNetworkToSupport: [PKPaymentNetwork] = PKPaymentRequest.availableNetworks()
+final class PayService: NSObject {
+    let paymentNetworkToSupport: [PKPaymentNetwork] = PKPaymentRequest.availableNetworks()
+    
+    private let didSuccessPaymentServiceRelay: PublishRelay<Void> = .init()
+    
+    var didSuccessPaymentService: Observable<Void> {
+        didSuccessPaymentServiceRelay.asObservable()
+    }
     
     func isApplePayAvailable() -> Bool {
         PKPaymentAuthorizationViewController.canMakePayments()
@@ -19,7 +27,7 @@ final class PayService {
         return PKPaymentAuthorizationViewController.canMakePayments(usingNetworks: paymentNetworkToSupport)
     }
     
-    private func buildPaymentRequest() -> PKPaymentRequest {
+    private func buildPaymentRequest(menu: Menu) -> PKPaymentRequest {
         let merchentID = "merchant.com.litech.spajam-final-product.aa"
         let request = PKPaymentRequest()
         request.countryCode = "JP"
@@ -28,13 +36,23 @@ final class PayService {
         request.supportedNetworks = paymentNetworkToSupport
         request.merchantCapabilities = .capability3DS
         
-        let item = PKPaymentSummaryItem(label: "メニュー1", amount: 1)
+        let item = PKPaymentSummaryItem(label: menu.menuName, amount: 1)
         request.paymentSummaryItems = [item]
+
         return request
     }
     
-    func showPaymentViewController(on viewController: UIViewController) {
-        let paymentController = PKPaymentAuthorizationViewController(paymentRequest: buildPaymentRequest())
-        
+    func showPaymentViewController(on viewController: UIViewController, menu: Menu) {
+        guard let paymentController = PKPaymentAuthorizationViewController(paymentRequest: buildPaymentRequest(menu: menu)) else {
+            return
+        }
+        paymentController.delegate = self
+        viewController.present(paymentController, animated: true, completion: nil)
+    }
+}
+
+extension PayService: PKPaymentAuthorizationViewControllerDelegate {
+    func paymentAuthorizationViewControllerDidFinish(_ controller: PKPaymentAuthorizationViewController) {
+        didSuccessPaymentServiceRelay.accept(())
     }
 }

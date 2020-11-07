@@ -20,6 +20,12 @@
 		CAAFB735253B131900B26DE2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB733253B131900B26DE2 /* LaunchScreen.storyboard */; };
 		CAFC4BA92554129900EC056A /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = CAFC4BA82554129900EC056A /* PKHUD */; };
 		CAFC4BB32554320E00EC056A /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC4BB22554320E00EC056A /* AppError.swift */; };
+		D300636125569F5000944A15 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = D300636025569F5000944A15 /* RxCocoa */; };
+		D300636325569F5000944A15 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = D300636225569F5000944A15 /* RxRelay */; };
+		D300636525569F5000944A15 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = D300636425569F5000944A15 /* RxSwift */; };
+		D300636725569F5000944A15 /* Action in Frameworks */ = {isa = PBXBuildFile; productRef = D300636625569F5000944A15 /* Action */; };
+		D300636925569F5000944A15 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D300636825569F5000944A15 /* Moya */; };
+		D300636B25569F5000944A15 /* RxMoya in Frameworks */ = {isa = PBXBuildFile; productRef = D300636A25569F5000944A15 /* RxMoya */; };
 		D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
 		D379165B25568F2F0015BE4F /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165A25568F2F0015BE4F /* Menu.swift */; };
 		D379165F25568F710015BE4F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165E25568F710015BE4F /* Shop.swift */; };
@@ -31,10 +37,12 @@
 		D3816B792556845B0069BF53 /* spajam-final-product-clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = D3816B652556845A0069BF53 /* spajam-final-product-clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D3816B81255684D50069BF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
 		D3816BA5255686970069BF53 /* PKHUD in Frameworks */ = {isa = PBXBuildFile; productRef = D3816BA4255686970069BF53 /* PKHUD */; };
-		D3816BA9255687B80069BF53 /* PayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816BA8255687B80069BF53 /* PayService.swift */; };
-		D3816BAC255689060069BF53 /* PayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816BA8255687B80069BF53 /* PayService.swift */; };
 		D3816BB32556890F0069BF53 /* AppError.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAFC4BB22554320E00EC056A /* AppError.swift */; };
-		D3816BB6255689150069BF53 /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
+		D38F780025569B1400E1B26E /* PayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F77FF25569B1400E1B26E /* PayService.swift */; };
+		D38F780125569B1400E1B26E /* PayService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D38F77FF25569B1400E1B26E /* PayService.swift */; };
+		D38F780925569B2400E1B26E /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165E25568F710015BE4F /* Shop.swift */; };
+		D38F780A25569B2400E1B26E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165A25568F2F0015BE4F /* Menu.swift */; };
+		D38F780B25569B2400E1B26E /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +94,7 @@
 		D3816B762556845B0069BF53 /* spajam_final_product_clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = spajam_final_product_clip.entitlements; sourceTree = "<group>"; };
 		D3816B84255684FA0069BF53 /* spajam-final-product.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "spajam-final-product.entitlements"; sourceTree = "<group>"; };
 		D3816BA8255687B80069BF53 /* PayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
+		D38F77FF25569B1400E1B26E /* PayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -107,6 +116,12 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D300636725569F5000944A15 /* Action in Frameworks */,
+				D300636325569F5000944A15 /* RxRelay in Frameworks */,
+				D300636925569F5000944A15 /* Moya in Frameworks */,
+				D300636125569F5000944A15 /* RxCocoa in Frameworks */,
+				D300636B25569F5000944A15 /* RxMoya in Frameworks */,
+				D300636525569F5000944A15 /* RxSwift in Frameworks */,
 				D3816BA5255686970069BF53 /* PKHUD in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -122,6 +137,7 @@
 				D3816B662556845A0069BF53 /* spajam-final-product-clip */,
 				CAAFB726253B131600B26DE2 /* Products */,
 				D3816BA3255686970069BF53 /* Frameworks */,
+				D38F77F925569AA100E1B26E /* Recovered References */,
 			);
 			sourceTree = "<group>";
 		};
@@ -151,6 +167,7 @@
 		D31401D225567CB300C30923 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				D38F77FE25569B1400E1B26E /* Pay */,
 				CAAFB731253B131900B26DE2 /* Assets.xcassets */,
 				CAFC4BB22554320E00EC056A /* AppError.swift */,
 				D31401D325567CB300C30923 /* DataGateway */,
@@ -179,14 +196,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		D3816B5D25567E950069BF53 /* Pay */ = {
-			isa = PBXGroup;
-			children = (
-				D3816BA8255687B80069BF53 /* PayService.swift */,
-			);
-			path = Pay;
-			sourceTree = "<group>";
-		};
 		D3816B662556845A0069BF53 /* spajam-final-product-clip */ = {
 			isa = PBXGroup;
 			children = (
@@ -206,6 +215,22 @@
 			children = (
 			);
 			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D38F77F925569AA100E1B26E /* Recovered References */ = {
+			isa = PBXGroup;
+			children = (
+				D3816BA8255687B80069BF53 /* PayService.swift */,
+			);
+			name = "Recovered References";
+			sourceTree = "<group>";
+		};
+		D38F77FE25569B1400E1B26E /* Pay */ = {
+			isa = PBXGroup;
+			children = (
+				D38F77FF25569B1400E1B26E /* PayService.swift */,
+			);
+			path = Pay;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -254,6 +279,12 @@
 			name = "spajam-final-product-clip";
 			packageProductDependencies = (
 				D3816BA4255686970069BF53 /* PKHUD */,
+				D300636025569F5000944A15 /* RxCocoa */,
+				D300636225569F5000944A15 /* RxRelay */,
+				D300636425569F5000944A15 /* RxSwift */,
+				D300636625569F5000944A15 /* Action */,
+				D300636825569F5000944A15 /* Moya */,
+				D300636A25569F5000944A15 /* RxMoya */,
 			);
 			productName = "spajam-final-product-clip";
 			productReference = D3816B652556845A0069BF53 /* spajam-final-product-clip.app */;
@@ -329,15 +360,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D31401D925567CB300C30923 /* DataGatewayAction.swift in Sources */,
-				D31401D825567CB300C30923 /* DataGateway.swift in Sources */,
 				D379165B25568F2F0015BE4F /* Menu.swift in Sources */,
-				CAAFB72D253B131600B26DE2 /* ViewController.swift in Sources */,
 				CAFC4BB32554320E00EC056A /* AppError.swift in Sources */,
 				D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */,
 				D379165F25568F710015BE4F /* Shop.swift in Sources */,
 				CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */,
-				D3816BA9255687B80069BF53 /* PayService.swift in Sources */,
+				D38F780025569B1400E1B26E /* PayService.swift in Sources */,
 				CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -348,9 +376,11 @@
 			files = (
 				D3816B6C2556845A0069BF53 /* ViewController.swift in Sources */,
 				D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */,
-				D3816BAC255689060069BF53 /* PayService.swift in Sources */,
+				D38F780A25569B2400E1B26E /* Menu.swift in Sources */,
 				D3816B6A2556845A0069BF53 /* SceneDelegate.swift in Sources */,
-				D3816BB6255689150069BF53 /* ModelMockable.swift in Sources */,
+				D38F780B25569B2400E1B26E /* ModelMockable.swift in Sources */,
+				D38F780925569B2400E1B26E /* Shop.swift in Sources */,
+				D38F780125569B1400E1B26E /* PayService.swift in Sources */,
 				D3816BB32556890F0069BF53 /* AppError.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -534,7 +564,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = ChoSho;
+				PROVISIONING_PROFILE_SPECIFIER = "spajam-final-product";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -547,8 +577,8 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_ENTITLEMENTS = "spajam-final-product/spajam-final-product.entitlements";
-				CODE_SIGN_IDENTITY = "Apple Development";
-				CODE_SIGN_STYLE = Automatic;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Manual;
 				DEVELOPMENT_TEAM = 2X6AD4W323;
 				INFOPLIST_FILE = "spajam-final-product/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -557,7 +587,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "";
+				PROVISIONING_PROFILE_SPECIFIER = "spajam-final-product";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -580,7 +610,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product.Clip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "ChoSho clip";
+				PROVISIONING_PROFILE_SPECIFIER = "spajam-final-product-clip";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -603,7 +633,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.litech.spajam-final-product.Clip";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE_SPECIFIER = "ChoSho clip";
+				PROVISIONING_PROFILE_SPECIFIER = "spajam-final-product-clip";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -711,6 +741,36 @@
 			isa = XCSwiftPackageProductDependency;
 			package = CAFC4BA72554129900EC056A /* XCRemoteSwiftPackageReference "PKHUD" */;
 			productName = PKHUD;
+		};
+		D300636025569F5000944A15 /* RxCocoa */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxCocoa;
+		};
+		D300636225569F5000944A15 /* RxRelay */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxRelay;
+		};
+		D300636425569F5000944A15 /* RxSwift */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185B7255691B2006433B8 /* XCRemoteSwiftPackageReference "RxSwift" */;
+			productName = RxSwift;
+		};
+		D300636625569F5000944A15 /* Action */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185C4255695CB006433B8 /* XCRemoteSwiftPackageReference "Action" */;
+			productName = Action;
+		};
+		D300636825569F5000944A15 /* Moya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185C9255695E8006433B8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = Moya;
+		};
+		D300636A25569F5000944A15 /* RxMoya */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = CA4185C9255695E8006433B8 /* XCRemoteSwiftPackageReference "Moya" */;
+			productName = RxMoya;
 		};
 		D3816BA4255686970069BF53 /* PKHUD */ = {
 			isa = XCSwiftPackageProductDependency;
