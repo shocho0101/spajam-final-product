@@ -24,7 +24,7 @@ extension Shop: ModelMockable {
                      menus: [.mock, .mock],
                      latitude: 35.681382,
                      longitude: 139.76608399999998,
-                     capacity: 100, currentPopulation: 25
+                     capacity: 10, currentPopulation: Int.random(in: 0...10)
         )
     }
 }

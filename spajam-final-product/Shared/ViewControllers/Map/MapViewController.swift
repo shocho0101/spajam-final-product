@@ -20,7 +20,7 @@ class MapViewController: UIViewController {
     
     @IBOutlet var mapView: MKMapView!
     
-    var locationManager: CLLocationManager!
+    let locationManager: CLLocationManager = CLLocationManager()
     
     init() {
         super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
@@ -33,15 +33,16 @@ class MapViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
-        locationManager = CLLocationManager()
         locationManager.delegate = self
-        locationManager!.requestWhenInUseAuthorization()
-        let ba = BalloonView()
-        ba.center = view.center
-        ba.frame = CGRect(x: 50, y: 50, width: 100, height: 50)
-        view.addSubview(ba)
+        locationManager.requestWhenInUseAuthorization()
+        locationManager.startUpdatingLocation()
+        mapView.delegate = self
         getData()
+        
+        guard let location = locationManager.location?.coordinate else {
+            return
+        }
+        mapView.setRegion(MKCoordinateRegion(center: location, span: MKCoordinateSpan(latitudeDelta: 0.01, longitudeDelta: 0.01)), animated: true)
     }
     
     func setCurrentLocation() {
@@ -53,7 +54,7 @@ class MapViewController: UIViewController {
     func getData() {
         action.execute(1)
             .subscribe( onNext:{
-                $0.map{
+                $0.forEach {
                     self.setMapPin(shop: $0)
                 }
             })
@@ -61,9 +62,8 @@ class MapViewController: UIViewController {
     }
     
     func setMapPin(shop: Shop) {
-//        let coordinate = CLLocationCoordinate2D(latitude: shop.latitude, longitude: shop.longitude)
         let coordinate = mapView.userLocation.coordinate
-        let pin = MKPointAnnotation()
+        let pin = ShopMapAnnotation(shop: shop)
         pin.title = shop.shopName
         pin.subtitle = shop.capacity.description
         pin.coordinate = coordinate
@@ -89,5 +89,33 @@ extension MapViewController: CLLocationManagerDelegate {
         default:
             break
         }
+    }
+}
+
+extension MapViewController: MKMapViewDelegate {
+    func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
+        if annotation is MKUserLocation {
+            return nil
+        }
+        guard let annotation = annotation as? ShopMapAnnotation else {
+            return nil
+        }
+        let identifier = "ShopMapAnnotationView"
+        let annotationView = MKAnnotationView(annotation: annotation, reuseIdentifier: identifier)
+        guard let view = UINib(nibName: "ShopMapAnnotationView", bundle: nil).instantiate(withOwner: nil, options: nil).first as? ShopAnnotationView
+        else {
+            return nil
+        }
+        view.configure(with: annotation.shop)
+        annotationView.translatesAutoresizingMaskIntoConstraints = false
+        view.translatesAutoresizingMaskIntoConstraints = false
+        annotationView.addSubview(view)
+        NSLayoutConstraint.activate([
+            view.topAnchor.constraint(equalTo: annotationView.topAnchor),
+            view.bottomAnchor.constraint(equalTo: annotationView.bottomAnchor),
+            view.centerXAnchor.constraint(equalTo: annotationView.leadingAnchor),
+            view.trailingAnchor.constraint(equalTo: annotationView.centerXAnchor)
+        ])
+        return annotationView
     }
 }
