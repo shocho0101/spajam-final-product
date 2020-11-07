@@ -15,7 +15,7 @@ import Action
 class MapViewController: UIViewController {
     
     let disposeBag = DisposeBag()
-    let action = DataGateway.getAction(GetShopsDataGatewayAction.self, useMock: false)
+    let action = DataGateway.getAction(GetShopsDataGatewayAction.self, useMock: true)
     
     
     @IBOutlet weak var mapView: MKMapView!
@@ -71,10 +71,10 @@ class MapViewController: UIViewController {
     }
     
     func setCardView(shop:Shop) {
-        UIView.animate(withDuration: 1.0, delay: 0.0, options: .transitionCrossDissolve, animations: {
+        UIView.animate(withDuration: 1.0) {
             self.cardView.isHidden = false
             self.cardView.setShop(shop: shop)
-        })
+        }
     }
     
     @IBAction func currentButtonTap() {
@@ -115,8 +115,14 @@ extension MapViewController: MKMapViewDelegate {
         }
         view.translatesAutoresizingMaskIntoConstraints = false
         view.configure(with: annotation.shop)
-        view.frame = annotationView.bounds
+        annotationView.frame = CGRect(x: 0, y: 0, width: 93, height: 16)
         annotationView.addSubview(view)
         return annotationView
+    }
+    
+    func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
+        if let view = view.annotation as? ShopMapAnnotation {
+            setCardView(shop: view.shop)
+        }
     }
 }

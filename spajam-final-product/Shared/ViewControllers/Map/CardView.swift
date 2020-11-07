@@ -23,6 +23,7 @@ class CardView: UIView {
     @IBOutlet var nameLabel: UILabel!
     @IBOutlet var comiLabel: UILabel!
     @IBOutlet var comiImageView: UIButton!
+    @IBOutlet var shopImageView: UIImageView!
 
     override init(frame: CGRect){
         super.init(frame: frame)
@@ -45,6 +46,7 @@ class CardView: UIView {
     func setShop(shop:Shop) {
         self.shop = shop
         nameLabel.text = shop.shopName
+        
         let comiguwai = Double(shop.currentPopulation / shop.capacity)
         if comiguwai < 0.25 {
             cardType = .one

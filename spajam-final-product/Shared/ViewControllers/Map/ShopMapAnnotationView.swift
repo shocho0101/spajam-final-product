@@ -13,6 +13,9 @@ class ShopAnnotationView: UIView {
     @IBOutlet weak var shopCrowdedImageView: UIImageView!
     @IBOutlet weak var contentView: UIView!
     
+    var shop: Shop?
+
+    
     override func layoutSubviews() {
         super.layoutSubviews()
         contentView.layer.cornerRadius = 4
@@ -25,6 +28,7 @@ class ShopAnnotationView: UIView {
     }
     
     func configure(with shop: Shop) {
+        self.shop = shop
         shopNameLabel.text = shop.shopName
         let comiguwai = Double(shop.currentPopulation / shop.capacity)
         if comiguwai < 0.25 {
@@ -41,4 +45,5 @@ class ShopAnnotationView: UIView {
             contentView.backgroundColor = UIColor(named: "four")
         }
     }
+    
 }
