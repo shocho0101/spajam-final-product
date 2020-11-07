@@ -44,7 +44,6 @@
 		D379165F25568F710015BE4F /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165E25568F710015BE4F /* Shop.swift */; };
 		D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B672556845A0069BF53 /* AppDelegate.swift */; };
 		D3816B6A2556845A0069BF53 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B692556845A0069BF53 /* SceneDelegate.swift */; };
-		D3816B6C2556845A0069BF53 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3816B6B2556845A0069BF53 /* ViewController.swift */; };
 		D3816B742556845B0069BF53 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D3816B722556845B0069BF53 /* LaunchScreen.storyboard */; };
 		D3816B792556845B0069BF53 /* spajam-final-product-clip.app in Embed App Clips */ = {isa = PBXBuildFile; fileRef = D3816B652556845A0069BF53 /* spajam-final-product-clip.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		D3816B81255684D50069BF53 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAAFB731253B131900B26DE2 /* Assets.xcassets */; };
@@ -99,7 +98,6 @@
 		D3816B652556845A0069BF53 /* spajam-final-product-clip.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "spajam-final-product-clip.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D3816B672556845A0069BF53 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D3816B692556845A0069BF53 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		D3816B6B2556845A0069BF53 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		D3816B732556845B0069BF53 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D3816B752556845B0069BF53 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D3816B762556845B0069BF53 /* spajam_final_product_clip.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = spajam_final_product_clip.entitlements; sourceTree = "<group>"; };
@@ -262,7 +260,6 @@
 			children = (
 				D3816B672556845A0069BF53 /* AppDelegate.swift */,
 				D3816B692556845A0069BF53 /* SceneDelegate.swift */,
-				D3816B6B2556845A0069BF53 /* ViewController.swift */,
 				D3816B722556845B0069BF53 /* LaunchScreen.storyboard */,
 				D3816B752556845B0069BF53 /* Info.plist */,
 				D3816B762556845B0069BF53 /* spajam_final_product_clip.entitlements */,
@@ -427,7 +424,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D3816B6C2556845A0069BF53 /* ViewController.swift in Sources */,
 				CA41863C2556B3EC006433B8 /* MenuViewController.swift in Sources */,
 				D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */,
 				D3816B6A2556845A0069BF53 /* SceneDelegate.swift in Sources */,
