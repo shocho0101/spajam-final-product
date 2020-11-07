@@ -17,6 +17,10 @@
 		CA286C0F2556C4BD00FADD71 /* GetShopDataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286C0E2556C4BD00FADD71 /* GetShopDataGatewayAction.swift */; };
 		CA286C122556C76500FADD71 /* MenuListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286C0A2556C38800FADD71 /* MenuListViewModel.swift */; };
 		CA286C152556C7B500FADD71 /* GetShopDataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286C0E2556C4BD00FADD71 /* GetShopDataGatewayAction.swift */; };
+		CA286C202556EC3C00FADD71 /* GuidePageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D372BD332556DD1900D4912B /* GuidePageViewController.swift */; };
+		CA286C232556EC4000FADD71 /* GuideChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D144C52556D6F30062E3BB /* GuideChildViewController.swift */; };
+		CA286C282556ECE300FADD71 /* URL+queryValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286C272556ECE300FADD71 /* URL+queryValue.swift */; };
+		CA286C2D2556ECFA00FADD71 /* URL+queryValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA286C272556ECE300FADD71 /* URL+queryValue.swift */; };
 		CA4185B9255691B2006433B8 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185B8255691B2006433B8 /* RxSwift */; };
 		CA4185BB255691B2006433B8 /* RxCocoa in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185BA255691B2006433B8 /* RxCocoa */; };
 		CA4185BD255691B2006433B8 /* RxRelay in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185BC255691B2006433B8 /* RxRelay */; };
@@ -112,6 +116,7 @@
 		CA286BF42556BDE900FADD71 /* MenuTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MenuTableViewCell.xib; sourceTree = "<group>"; };
 		CA286C0A2556C38800FADD71 /* MenuListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuListViewModel.swift; sourceTree = "<group>"; };
 		CA286C0E2556C4BD00FADD71 /* GetShopDataGatewayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShopDataGatewayAction.swift; sourceTree = "<group>"; };
+		CA286C272556ECE300FADD71 /* URL+queryValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URL+queryValue.swift"; sourceTree = "<group>"; };
 		CA4185E125569F37006433B8 /* KaikaiAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KaikaiAPI.swift; sourceTree = "<group>"; };
 		CA4185E82556A090006433B8 /* GetShopsDataGatewayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShopsDataGatewayAction.swift; sourceTree = "<group>"; };
 		CA41861A2556B2C2006433B8 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
@@ -209,6 +214,14 @@
 			path = MenuCell;
 			sourceTree = "<group>";
 		};
+		CA286C262556ECCC00FADD71 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				CA286C272556ECE300FADD71 /* URL+queryValue.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
 		CA4185D225569EA0006433B8 /* API */ = {
 			isa = PBXGroup;
 			children = (
@@ -262,6 +275,7 @@
 		D31401D225567CB300C30923 /* Shared */ = {
 			isa = PBXGroup;
 			children = (
+				CA286C262556ECCC00FADD71 /* Extensions */,
 				CA286BF12556BDC900FADD71 /* Views */,
 				D3527A522556B7BE00836361 /* ViewControllers */,
 				D38F77FE25569B1400E1B26E /* Pay */,
@@ -540,6 +554,7 @@
 				D390A11A2556EA5A009CA880 /* ShopMapAnnotation.swift in Sources */,
 				D3527A662556B7BE00836361 /* MenuViewController.swift in Sources */,
 				D3F72BF62556EE210002D5BB /* ShopMapAnnotationView.swift in Sources */,
+				CA286C282556ECE300FADD71 /* URL+queryValue.swift in Sources */,
 				CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */,
 				D38F780025569B1400E1B26E /* PayService.swift in Sources */,
 				CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */,
@@ -565,15 +580,18 @@
 				D3816B6A2556845A0069BF53 /* SceneDelegate.swift in Sources */,
 				D38F780B25569B2400E1B26E /* ModelMockable.swift in Sources */,
 				D38F780925569B2400E1B26E /* Shop.swift in Sources */,
+				CA286C232556EC4000FADD71 /* GuideChildViewController.swift in Sources */,
 				D38F780125569B1400E1B26E /* PayService.swift in Sources */,
 				D3527A772556B83700836361 /* DataGateway.swift in Sources */,
 				D390A11B2556EA5A009CA880 /* ShopMapAnnotation.swift in Sources */,
+				CA286C2D2556ECFA00FADD71 /* URL+queryValue.swift in Sources */,
 				D3816BB32556890F0069BF53 /* AppError.swift in Sources */,
 				D3527A7D2556BA2000836361 /* KaikaiAPI.swift in Sources */,
 				D341EA402556C6E60009B25F /* CircleBorderButton.swift in Sources */,
 				D3527A7A2556B83A00836361 /* GetShopsDataGatewayAction.swift in Sources */,
 				CA286C042556C17A00FADD71 /* MenuTableViewCell.swift in Sources */,
 				CA286C122556C76500FADD71 /* MenuListViewModel.swift in Sources */,
+				CA286C202556EC3C00FADD71 /* GuidePageViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
