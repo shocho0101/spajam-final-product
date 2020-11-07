@@ -10,6 +10,7 @@ import Foundation
 struct Shop: Codable {
     let shopId: Int
     let shopName: String
+    let imageUrl: String?
     let menus: [Menu]
     let latitude: Double
     let longitude: Double
@@ -21,6 +22,7 @@ extension Shop: ModelMockable {
     static var mock: Shop {
         return .init(shopId: 1,
                      shopName: "おみーせ",
+                     imageUrl: "https://yahoo.co.jp/icon",
                      menus: [.mock, .mock],
                      latitude: 35.681382,
                      longitude: 139.76608399999998,
