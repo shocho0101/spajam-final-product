@@ -15,7 +15,7 @@ import Action
 class MapViewController: UIViewController {
     
     let disposeBag = DisposeBag()
-    let action = DataGateway.getAction(GetShopsDataGatewayAction.self, useMock: true)
+    let action = DataGateway.getAction(GetShopsDataGatewayAction.self, useMock: false)
     
     
     @IBOutlet weak var mapView: MKMapView!
@@ -63,11 +63,10 @@ class MapViewController: UIViewController {
     }
     
     func setMapPin(shop: Shop) {
-        let coordinate = mapView.userLocation.coordinate
         let pin = ShopMapAnnotation(shop: shop)
         pin.title = shop.shopName
         pin.subtitle = shop.capacity.description
-        pin.coordinate = coordinate
+        pin.coordinate = CLLocationCoordinate2D(latitude: shop.latitude, longitude: shop.longitude)
         mapView.addAnnotation(pin)
     }
     
