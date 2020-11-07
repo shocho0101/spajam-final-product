@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17156" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17126"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="iN0-l3-epB" customClass="ShopAnnotationView" customModule="spajam_final_product" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="109" height="32"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ned-pX-afF">
+                    <rect key="frame" x="8" y="8" width="93" height="16"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="252" verticalHuggingPriority="251" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="mi0-lj-TOE">
+                            <rect key="frame" x="0.0" y="0.0" width="17" height="16"/>
+                        </imageView>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nie-Ca-Los">
+                            <rect key="frame" x="21" y="0.0" width="72" height="16"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="14"/>
+                            <color key="textColor" systemColor="systemBackgroundColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="bottom" secondItem="mi0-lj-TOE" secondAttribute="bottom" id="3Om-sc-zov"/>
+                        <constraint firstAttribute="bottom" secondItem="nie-Ca-Los" secondAttribute="bottom" id="6EG-Uk-vDn"/>
+                        <constraint firstItem="nie-Ca-Los" firstAttribute="leading" secondItem="mi0-lj-TOE" secondAttribute="trailing" constant="4" id="E0t-g8-Gcj"/>
+                        <constraint firstItem="nie-Ca-Los" firstAttribute="top" secondItem="ned-pX-afF" secondAttribute="top" id="OQ3-zh-bXB"/>
+                        <constraint firstItem="mi0-lj-TOE" firstAttribute="leading" secondItem="ned-pX-afF" secondAttribute="leading" id="fA5-zt-SOG"/>
+                        <constraint firstItem="mi0-lj-TOE" firstAttribute="top" secondItem="ned-pX-afF" secondAttribute="top" id="ns4-4r-4x3"/>
+                        <constraint firstAttribute="trailing" secondItem="nie-Ca-Los" secondAttribute="trailing" id="qfS-hN-CMy"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <constraints>
+                <constraint firstItem="ned-pX-afF" firstAttribute="top" secondItem="iN0-l3-epB" secondAttribute="top" constant="8" id="5A0-dO-vml"/>
+                <constraint firstItem="ned-pX-afF" firstAttribute="leading" secondItem="iN0-l3-epB" secondAttribute="leading" constant="8" id="Eog-oX-4jm"/>
+                <constraint firstAttribute="trailing" secondItem="ned-pX-afF" secondAttribute="trailing" constant="8" id="iJY-po-oLw"/>
+                <constraint firstAttribute="bottom" secondItem="ned-pX-afF" secondAttribute="bottom" constant="8" id="j2V-Zs-mX6"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="contentView" destination="ned-pX-afF" id="Y5Q-aq-JWc"/>
+                <outlet property="shopCrowdedImageView" destination="mi0-lj-TOE" id="jhD-ZK-s4I"/>
+                <outlet property="shopNameLabel" destination="nie-Ca-Los" id="7gB-R3-Lri"/>
+            </connections>
+            <point key="canvasLocation" x="45.652173913043484" y="108.48214285714285"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="one" width="17" height="17"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

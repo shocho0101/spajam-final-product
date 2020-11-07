@@ -39,6 +39,10 @@
 		D300636725569F5000944A15 /* Action in Frameworks */ = {isa = PBXBuildFile; productRef = D300636625569F5000944A15 /* Action */; };
 		D300636925569F5000944A15 /* Moya in Frameworks */ = {isa = PBXBuildFile; productRef = D300636825569F5000944A15 /* Moya */; };
 		D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
+		D328467B255718530040DDC6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3284679255718530040DDC6 /* CardView.swift */; };
+		D328467C255718530040DDC6 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3284679255718530040DDC6 /* CardView.swift */; };
+		D328467D255718530040DDC6 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D328467A255718530040DDC6 /* CardView.xib */; };
+		D328467E255718530040DDC6 /* CardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D328467A255718530040DDC6 /* CardView.xib */; };
 		D341EA3F2556C6E60009B25F /* CircleBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341EA3E2556C6E60009B25F /* CircleBorderButton.swift */; };
 		D341EA402556C6E60009B25F /* CircleBorderButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D341EA3E2556C6E60009B25F /* CircleBorderButton.swift */; };
 		D3527A322556B58200836361 /* RxSwift in Frameworks */ = {isa = PBXBuildFile; productRef = CA4185D725569EE4006433B8 /* RxSwift */; };
@@ -77,8 +81,14 @@
 		D38F780925569B2400E1B26E /* Shop.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165E25568F710015BE4F /* Shop.swift */; };
 		D38F780A25569B2400E1B26E /* Menu.swift in Sources */ = {isa = PBXBuildFile; fileRef = D379165A25568F2F0015BE4F /* Menu.swift */; };
 		D38F780B25569B2400E1B26E /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
+		D390A11A2556EA5A009CA880 /* ShopMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D390A1192556EA5A009CA880 /* ShopMapAnnotation.swift */; };
+		D390A11B2556EA5A009CA880 /* ShopMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D390A1192556EA5A009CA880 /* ShopMapAnnotation.swift */; };
 		D3D144C72556D6F30062E3BB /* GuideChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D144C52556D6F30062E3BB /* GuideChildViewController.swift */; };
 		D3D144C82556D6F30062E3BB /* GuideChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D144C62556D6F30062E3BB /* GuideChildViewController.xib */; };
+		D3F72BF62556EE210002D5BB /* ShopMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F72BF52556EE210002D5BB /* ShopMapAnnotationView.swift */; };
+		D3F72BF72556EE210002D5BB /* ShopMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F72BF52556EE210002D5BB /* ShopMapAnnotationView.swift */; };
+		D3F72BFB2556EFCE0002D5BB /* ShopMapAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F72BFA2556EFCE0002D5BB /* ShopMapAnnotationView.xib */; };
+		D3F72BFC2556EFCE0002D5BB /* ShopMapAnnotationView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3F72BFA2556EFCE0002D5BB /* ShopMapAnnotationView.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -129,6 +139,8 @@
 		D31401D425567CB300C30923 /* DataGateway.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGateway.swift; sourceTree = "<group>"; };
 		D31401D525567CB300C30923 /* DataGatewayAction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DataGatewayAction.swift; sourceTree = "<group>"; };
 		D31401D725567CB300C30923 /* ModelMockable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModelMockable.swift; sourceTree = "<group>"; };
+		D3284679255718530040DDC6 /* CardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		D328467A255718530040DDC6 /* CardView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = CardView.xib; sourceTree = "<group>"; };
 		D341EA3E2556C6E60009B25F /* CircleBorderButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleBorderButton.swift; sourceTree = "<group>"; };
 		D3527A542556B7BE00836361 /* MenuListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MenuListViewController.xib; sourceTree = "<group>"; };
 		D3527A552556B7BE00836361 /* MenuListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuListViewController.swift; sourceTree = "<group>"; };
@@ -148,8 +160,11 @@
 		D3816B84255684FA0069BF53 /* spajam-final-product.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "spajam-final-product.entitlements"; sourceTree = "<group>"; };
 		D3816BA8255687B80069BF53 /* PayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
 		D38F77FF25569B1400E1B26E /* PayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
+		D390A1192556EA5A009CA880 /* ShopMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMapAnnotation.swift; sourceTree = "<group>"; };
 		D3D144C52556D6F30062E3BB /* GuideChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideChildViewController.swift; sourceTree = "<group>"; };
 		D3D144C62556D6F30062E3BB /* GuideChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideChildViewController.xib; sourceTree = "<group>"; };
+		D3F72BF52556EE210002D5BB /* ShopMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMapAnnotationView.swift; sourceTree = "<group>"; };
+		D3F72BFA2556EFCE0002D5BB /* ShopMapAnnotationView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ShopMapAnnotationView.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -324,8 +339,13 @@
 		D3527A562556B7BE00836361 /* Map */ = {
 			isa = PBXGroup;
 			children = (
+				D3284679255718530040DDC6 /* CardView.swift */,
+				D328467A255718530040DDC6 /* CardView.xib */,
 				D3527A572556B7BE00836361 /* MapViewController.swift */,
 				D3527A582556B7BE00836361 /* MapViewController.xib */,
+				D390A1192556EA5A009CA880 /* ShopMapAnnotation.swift */,
+				D3F72BF52556EE210002D5BB /* ShopMapAnnotationView.swift */,
+				D3F72BFA2556EFCE0002D5BB /* ShopMapAnnotationView.xib */,
 			);
 			path = Map;
 			sourceTree = "<group>";
@@ -499,6 +519,8 @@
 			files = (
 				D3527A642556B7BE00836361 /* MenuViewController.xib in Resources */,
 				CAAFB732253B131900B26DE2 /* Assets.xcassets in Resources */,
+				D328467D255718530040DDC6 /* CardView.xib in Resources */,
+				D3F72BFB2556EFCE0002D5BB /* ShopMapAnnotationView.xib in Resources */,
 				D3527A622556B7BE00836361 /* MapViewController.xib in Resources */,
 				D3D144C82556D6F30062E3BB /* GuideChildViewController.xib in Resources */,
 				CA286BF62556BDE900FADD71 /* MenuTableViewCell.xib in Resources */,
@@ -512,6 +534,8 @@
 			files = (
 				D3527A652556B7BE00836361 /* MenuViewController.xib in Resources */,
 				D3816B81255684D50069BF53 /* Assets.xcassets in Resources */,
+				D3F72BFC2556EFCE0002D5BB /* ShopMapAnnotationView.xib in Resources */,
+				D328467E255718530040DDC6 /* CardView.xib in Resources */,
 				D3527A632556B7BE00836361 /* MapViewController.xib in Resources */,
 				CA286C072556C17C00FADD71 /* MenuTableViewCell.xib in Resources */,
 				D3527A5D2556B7BE00836361 /* MenuListViewController.xib in Resources */,
@@ -537,11 +561,14 @@
 				D372BD342556DD1900D4912B /* GuidePageViewController.swift in Sources */,
 				D31401DA25567CB300C30923 /* ModelMockable.swift in Sources */,
 				D379165F25568F710015BE4F /* Shop.swift in Sources */,
+				D390A11A2556EA5A009CA880 /* ShopMapAnnotation.swift in Sources */,
 				D3527A662556B7BE00836361 /* MenuViewController.swift in Sources */,
+				D3F72BF62556EE210002D5BB /* ShopMapAnnotationView.swift in Sources */,
 				CA286C282556ECE300FADD71 /* URL+queryValue.swift in Sources */,
 				CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */,
 				D38F780025569B1400E1B26E /* PayService.swift in Sources */,
 				CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */,
+				D328467B255718530040DDC6 /* CardView.swift in Sources */,
 				D341EA3F2556C6E60009B25F /* CircleBorderButton.swift in Sources */,
 				D3527A5E2556B7BE00836361 /* MenuListViewController.swift in Sources */,
 				CA286BF52556BDE900FADD71 /* MenuTableViewCell.swift in Sources */,
@@ -557,8 +584,10 @@
 				CA286C152556C7B500FADD71 /* GetShopDataGatewayAction.swift in Sources */,
 				D3816B682556845A0069BF53 /* AppDelegate.swift in Sources */,
 				D38F780A25569B2400E1B26E /* Menu.swift in Sources */,
+				D3F72BF72556EE210002D5BB /* ShopMapAnnotationView.swift in Sources */,
 				D3527A612556B7BE00836361 /* MapViewController.swift in Sources */,
 				D3527A672556B7BE00836361 /* MenuViewController.swift in Sources */,
+				D328467C255718530040DDC6 /* CardView.swift in Sources */,
 				D3527A5F2556B7BE00836361 /* MenuListViewController.swift in Sources */,
 				D3816B6A2556845A0069BF53 /* SceneDelegate.swift in Sources */,
 				D38F780B25569B2400E1B26E /* ModelMockable.swift in Sources */,
@@ -566,6 +595,7 @@
 				CA286C232556EC4000FADD71 /* GuideChildViewController.swift in Sources */,
 				D38F780125569B1400E1B26E /* PayService.swift in Sources */,
 				D3527A772556B83700836361 /* DataGateway.swift in Sources */,
+				D390A11B2556EA5A009CA880 /* ShopMapAnnotation.swift in Sources */,
 				CA286C2D2556ECFA00FADD71 /* URL+queryValue.swift in Sources */,
 				D3816BB32556890F0069BF53 /* AppError.swift in Sources */,
 				D3527A7D2556BA2000836361 /* KaikaiAPI.swift in Sources */,
