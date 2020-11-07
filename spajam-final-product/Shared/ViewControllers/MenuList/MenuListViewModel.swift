@@ -14,10 +14,10 @@ extension MenuListViewController {
         let getShopAction = DataGateway.getAction(GetShopDataGatewayAction.self, useMock: false)
         let disposeBag = DisposeBag()
         
-        let viewWillAppear = PublishRelay<Void>()
+        let viewDidLoad = PublishRelay<Void>()
         
-        init() {
-            viewWillAppear.map { .init(shopId: 1, tableId: 1, deviceId: "aaa") }.bind(to: getShopAction.inputs).disposed(by: disposeBag)
+        init(_ input: Input) {
+            viewDidLoad.map { .init(shopId: input.shopId, tableId: input.tableId, deviceId: "aaa") }.bind(to: getShopAction.inputs).disposed(by: disposeBag)
         }
         
         var menus: Driver<[Menu]> {

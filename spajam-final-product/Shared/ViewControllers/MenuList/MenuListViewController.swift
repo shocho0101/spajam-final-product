@@ -10,6 +10,11 @@ import RxSwift
 
 class MenuListViewController: UIViewController {
     
+    struct Input {
+        var shopId: Int
+        var tableId: Int
+    }
+    
     @IBOutlet var tableView: UITableView!
     @IBOutlet var bottomBackgroundView: UIView!
     @IBOutlet var purchaseButton: UIButton!
@@ -17,8 +22,9 @@ class MenuListViewController: UIViewController {
     let viewModel: ViewModel
     let disposeBag = DisposeBag()
     
-    init() {
-        self.viewModel = ViewModel()
+    
+    init(_ input: Input) {
+        self.viewModel = ViewModel(input)
         super.init(nibName: nil, bundle: Bundle(for: type(of: self)))
     }
     
@@ -42,10 +48,7 @@ class MenuListViewController: UIViewController {
         tableView.register(UINib(nibName: "MenuTableViewCell", bundle: nil), forCellReuseIdentifier: "Cell")
         tableView.rowHeight = 124
         bind()
-    }
-    
-    override func viewWillAppear(_ animated: Bool) {
-        viewModel.viewWillAppear.accept(())
+        viewModel.viewDidLoad.accept(())
     }
     
     func bind() {
