@@ -28,7 +28,7 @@ struct GetShopGuideDataGatewayAction: DataGatewayAction {
             return provider.rx
                 .request(.getShop(shopId: input.shopId, tableId: input.tableId, deviceId: input.deviceId))
                 .do(onSuccess: { response in
-                    print(response)
+                    print(String(data: response.data, encoding: .utf8))
                 })
                 .map(ShopGuide.self, using: decoder)
                 .debug()
