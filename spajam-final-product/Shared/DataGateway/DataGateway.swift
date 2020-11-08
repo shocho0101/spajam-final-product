@@ -17,11 +17,7 @@ enum DataGateway {
     }
     
     static func getAction<T: DataGatewayMockable>(_ request: T.Type, useMock: Bool =  false) -> Action<T.Input, T.Output> {
-        if useMock {
-            return T.mock()
-        } else {
             return T.action()
-        }
     }
 }
 
