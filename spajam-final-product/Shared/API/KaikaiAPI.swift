@@ -38,7 +38,10 @@ enum KaikaiAPI: TargetType {
         switch self {
         case .getShops:
             return [Shop].jsonMock
-        case .getShop:
+        case .getShop(_, let tableId, _):
+            if tableId == 2 {
+                return ShopGuide.jsonMock
+            }
             return Shop.jsonMock
         }
     }
