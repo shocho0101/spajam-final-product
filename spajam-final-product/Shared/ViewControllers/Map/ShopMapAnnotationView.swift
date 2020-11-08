@@ -30,7 +30,7 @@ class ShopAnnotationView: UIView {
     func configure(with shop: Shop) {
         self.shop = shop
         shopNameLabel.text = shop.shopName
-        let comiguwai = Double(shop.currentPopulation / shop.capacity)
+        let comiguwai = Double(shop.currentPopulation) / Double(shop.capacity)
         if comiguwai < 0.25 {
             shopCrowdedImageView.image = UIImage(named: "one")
             contentView.backgroundColor = UIColor(named: "one")

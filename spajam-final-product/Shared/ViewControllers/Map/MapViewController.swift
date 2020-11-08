@@ -44,7 +44,43 @@ class MapViewController: UIViewController {
         locationManager.requestWhenInUseAuthorization()
         locationManager.startUpdatingLocation()
         mapView.delegate = self
+        for view in mapView.subviews {
+            if view.frame.width < 100 {
+                view.isHidden = true
+            }
+        }
+
         getData()
+        
+//        let shop1 = Shop(shopId: 0,
+//                         shopName: "おみーせ１",
+//                         imageUrl: "https://s3-ap-northeast-1.amazonaws.com/tabi-channel/upload_by_admin/kinkakuzi_0_800.jpg",
+//                         menus: [],
+//                         latitude: 35.657319,
+//                         longitude: 139.701533,
+//                         capacity: 100,
+//                         currentPopulation: 10)
+//        setMapPin(shop: shop1)
+//        
+//        let shop2 = Shop(shopId: 0,
+//                         shopName: "おみーせ2",
+//                         imageUrl: "https://s3-ap-northeast-1.amazonaws.com/tabi-channel/upload_by_admin/kinkakuzi_0_800.jpg",
+//                         menus: [],
+//                         latitude: 35.656420,
+//                         longitude: 139.701530,
+//                         capacity: 100,
+//                         currentPopulation: 50)
+//        setMapPin(shop: shop2)
+//        
+//        let shop3 = Shop(shopId: 0,
+//                         shopName: "おみーせ3",
+//                         imageUrl: "https://s3-ap-northeast-1.amazonaws.com/tabi-channel/upload_by_admin/kinkakuzi_0_800.jpg",
+//                         menus: [],
+//                         latitude: 35.658210,
+//                         longitude: 139.701331,
+//                         capacity: 100,
+//                         currentPopulation: 80)
+//        setMapPin(shop: shop3)
         
         guard let location = locationManager.location?.coordinate else {
             return
@@ -77,11 +113,24 @@ class MapViewController: UIViewController {
     }
     
     func setCardView(shop:Shop) {
-        UIView.animate(withDuration: 1.0) {
-            self.cardView.isHidden = false
-            self.cardView.setShop(shop: shop)
-        }
+        self.cardView.setShop(shop: shop)
     }
+    
+    func showCardView() {
+        self.cardView.isHidden = false
+        UIView.animate(withDuration: 0.3, delay: 0, options: [.transitionCrossDissolve,.curveEaseInOut],animations: {
+            self.cardView.alpha = 1
+        })
+    }
+    
+    func unShowCardView() {
+        UIView.animate(withDuration: 0.3, delay: 0, options: [.transitionCrossDissolve,.curveEaseInOut],animations: {
+            self.cardView.alpha = 0
+        }, completion: {_ in
+            self.cardView.isHidden = true
+        })
+    }
+    
     
     @IBAction func currentButtonTap() {
         setCurrentLocation()
@@ -108,7 +157,13 @@ extension MapViewController: CLLocationManagerDelegate {
 extension MapViewController: MKMapViewDelegate {
     func mapView(_ mapView: MKMapView, viewFor annotation: MKAnnotation) -> MKAnnotationView? {
         if annotation is MKUserLocation {
-            return nil
+            let mk = MKAnnotationView()
+            let imageView = UIImageView()
+            imageView.image = #imageLiteral(resourceName: "gps")
+            imageView.center = mk.center
+            imageView.frame.size = CGSize(width: 25, height: 25)
+            mk.addSubview(imageView)
+            return mk
         }
         guard let annotation = annotation as? ShopMapAnnotation else {
             return nil
@@ -121,14 +176,23 @@ extension MapViewController: MKMapViewDelegate {
         }
         view.translatesAutoresizingMaskIntoConstraints = false
         view.configure(with: annotation.shop)
-        annotationView.frame = CGRect(x: 0, y: 0, width: 93, height: 16)
+        annotationView.frame = CGRect(x: 0, y: 0, width: 110, height: 32)
         annotationView.addSubview(view)
         return annotationView
     }
     
     func mapView(_ mapView: MKMapView, didSelect view: MKAnnotationView) {
         if let view = view.annotation as? ShopMapAnnotation {
+            if cardView.isHidden {
+                showCardView()
+            }
             setCardView(shop: view.shop)
         }
     }
+    
+    func mapView(_ mapView: MKMapView, didDeselect view: MKAnnotationView) {
+//        unShowCardView()
+    }
+    
+    
 }

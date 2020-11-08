@@ -22,7 +22,7 @@ extension Shop: ModelMockable {
     static var mock: Shop {
         return .init(shopId: 1,
                      shopName: "おみーせ",
-                     imageUrl: "https://yahoo.co.jp/icon",
+                     imageUrl: "https://s3-ap-northeast-1.amazonaws.com/tabi-channel/upload_by_admin/kinkakuzi_0_800.jpg",
                      menus: [.mock, .mock],
                      latitude: 35.681382,
                      longitude: 139.76608399999998,
