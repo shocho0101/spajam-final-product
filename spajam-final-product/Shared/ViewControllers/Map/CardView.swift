@@ -24,7 +24,7 @@ class CardView: UIView {
     @IBOutlet var comiLabel: UILabel!
     @IBOutlet var comiImageView: UIButton!
     @IBOutlet var shopImageView: UIImageView!
-
+    
     override init(frame: CGRect){
         super.init(frame: frame)
         loadNib()
@@ -38,16 +38,27 @@ class CardView: UIView {
     func loadNib(){
         let view = Bundle.main.loadNibNamed("CardView", owner: self, options: nil)?.first as! UIView
         view.autoresizingMask = [.flexibleWidth, .flexibleHeight]
+        view.backgroundColor = .clear
         self.addSubview(view)
+        
+        self.layer.shadowOffset = CGSize(width: 4, height: 4)
+        self.layer.shadowOpacity = 0.15
+        self.layer.shadowColor = UIColor.black.cgColor
+        self.layer.shadowRadius = 8
+
         self.layer.cornerRadius = 8
-        self.clipsToBounds = true
+        
+        shopImageView.layer.maskedCorners = [.layerMinXMaxYCorner,.layerMinXMinYCorner]
+        shopImageView.layer.cornerRadius = 8
+        shopImageView.clipsToBounds = true
+        shopImageView.contentMode = .scaleAspectFill
+        
     }
     
     func setShop(shop:Shop) {
         self.shop = shop
         nameLabel.text = shop.shopName
-        
-        let comiguwai = Double(shop.currentPopulation / shop.capacity)
+        let comiguwai = Double(shop.currentPopulation) / Double(shop.capacity)
         if comiguwai < 0.25 {
             cardType = .one
         } else if comiguwai < 0.5 {
@@ -57,7 +68,8 @@ class CardView: UIView {
         } else {
             cardType = .four
         }
-        setButtonType()
+        self.shopImageView.kf.setImage(with: URL(string: shop.imageUrl ?? ""))
+        self.setButtonType()
     }
     
     func setButtonType() {
