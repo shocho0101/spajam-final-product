@@ -87,6 +87,9 @@
 		D38F780B25569B2400E1B26E /* ModelMockable.swift in Sources */ = {isa = PBXBuildFile; fileRef = D31401D725567CB300C30923 /* ModelMockable.swift */; };
 		D390A11A2556EA5A009CA880 /* ShopMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D390A1192556EA5A009CA880 /* ShopMapAnnotation.swift */; };
 		D390A11B2556EA5A009CA880 /* ShopMapAnnotation.swift in Sources */ = {isa = PBXBuildFile; fileRef = D390A1192556EA5A009CA880 /* ShopMapAnnotation.swift */; };
+		D3C3E1292557792B00E200C6 /* GetShopGuideDataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3E1282557792B00E200C6 /* GetShopGuideDataGatewayAction.swift */; };
+		D3C3E12A2557792B00E200C6 /* GetShopGuideDataGatewayAction.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3C3E1282557792B00E200C6 /* GetShopGuideDataGatewayAction.swift */; };
+		D3C3E12F25577E4900E200C6 /* GuideChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D144C62556D6F30062E3BB /* GuideChildViewController.xib */; };
 		D3D144C72556D6F30062E3BB /* GuideChildViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3D144C52556D6F30062E3BB /* GuideChildViewController.swift */; };
 		D3D144C82556D6F30062E3BB /* GuideChildViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = D3D144C62556D6F30062E3BB /* GuideChildViewController.xib */; };
 		D3F72BF62556EE210002D5BB /* ShopMapAnnotationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D3F72BF52556EE210002D5BB /* ShopMapAnnotationView.swift */; };
@@ -167,6 +170,7 @@
 		D3816BA8255687B80069BF53 /* PayService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
 		D38F77FF25569B1400E1B26E /* PayService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PayService.swift; sourceTree = "<group>"; };
 		D390A1192556EA5A009CA880 /* ShopMapAnnotation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMapAnnotation.swift; sourceTree = "<group>"; };
+		D3C3E1282557792B00E200C6 /* GetShopGuideDataGatewayAction.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetShopGuideDataGatewayAction.swift; sourceTree = "<group>"; };
 		D3D144C52556D6F30062E3BB /* GuideChildViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GuideChildViewController.swift; sourceTree = "<group>"; };
 		D3D144C62556D6F30062E3BB /* GuideChildViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GuideChildViewController.xib; sourceTree = "<group>"; };
 		D3F72BF52556EE210002D5BB /* ShopMapAnnotationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ShopMapAnnotationView.swift; sourceTree = "<group>"; };
@@ -256,6 +260,7 @@
 			children = (
 				CA4185E82556A090006433B8 /* GetShopsDataGatewayAction.swift */,
 				CA286C0E2556C4BD00FADD71 /* GetShopDataGatewayAction.swift */,
+				D3C3E1282557792B00E200C6 /* GetShopGuideDataGatewayAction.swift */,
 			);
 			path = DataGateway;
 			sourceTree = "<group>";
@@ -550,6 +555,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				CA286C542557315000FADD71 /* PurchaseFinishViewController.xib in Resources */,
+				D3C3E12F25577E4900E200C6 /* GuideChildViewController.xib in Resources */,
 				D3527A652556B7BE00836361 /* MenuViewController.xib in Resources */,
 				D3816B81255684D50069BF53 /* Assets.xcassets in Resources */,
 				D3F72BFC2556EFCE0002D5BB /* ShopMapAnnotationView.xib in Resources */,
@@ -585,6 +591,7 @@
 				CA286C4D255729D400FADD71 /* PurchaseFinishViewController.swift in Sources */,
 				CA286C282556ECE300FADD71 /* URL+queryValue.swift in Sources */,
 				CAAFB729253B131600B26DE2 /* AppDelegate.swift in Sources */,
+				D3C3E1292557792B00E200C6 /* GetShopGuideDataGatewayAction.swift in Sources */,
 				D38F780025569B1400E1B26E /* PayService.swift in Sources */,
 				CAAFB72B253B131600B26DE2 /* SceneDelegate.swift in Sources */,
 				D328467B255718530040DDC6 /* CardView.swift in Sources */,
@@ -617,6 +624,7 @@
 				CA286C512557305300FADD71 /* PurchaseFinishViewController.swift in Sources */,
 				D390A11B2556EA5A009CA880 /* ShopMapAnnotation.swift in Sources */,
 				CA286C2D2556ECFA00FADD71 /* URL+queryValue.swift in Sources */,
+				D3C3E12A2557792B00E200C6 /* GetShopGuideDataGatewayAction.swift in Sources */,
 				D3816BB32556890F0069BF53 /* AppError.swift in Sources */,
 				D3527A7D2556BA2000836361 /* KaikaiAPI.swift in Sources */,
 				D341EA402556C6E60009B25F /* CircleBorderButton.swift in Sources */,

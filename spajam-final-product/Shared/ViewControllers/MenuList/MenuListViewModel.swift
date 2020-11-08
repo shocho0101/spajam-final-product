@@ -24,7 +24,7 @@ extension MenuListViewController {
         
         
         init(_ input: Input) {
-            viewDidLoad.map { .init(shopId: input.shopId, tableId: input.tableId, deviceId: "aaa") }.bind(to: getShopAction.inputs).disposed(by: disposeBag)
+            viewDidLoad.map { .init(shopId: input.shopId, deviceId: "aaa") }.bind(to: getShopAction.inputs).disposed(by: disposeBag)
             
             addCart.map { [cartDictionary] in
                 var newCardDictionary = cartDictionary.value
