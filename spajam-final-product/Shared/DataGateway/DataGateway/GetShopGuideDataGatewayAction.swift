@@ -1,24 +1,23 @@
 //
-//  GetShopDataGatewayAction.swift
+//  GetShopGuideDataGatewayAction.swift
 //  spajam-final-product
 //
-//  Created by 張翔 on 2020/11/07.
+//  Created by Fumiya Tanaka on 2020/11/08.
 //
 
 import Foundation
 import Action
-import RxSwift
-import Moya
 import RxMoya
+import Moya
 
-struct GetShopDataGatewayAction: DataGatewayAction {
+struct GetShopGuideDataGatewayAction: DataGatewayAction {
     struct Input {
         var shopId: Int
-        let tableId: Int = 1
+        let tableId: Int = 2
         var deviceId: String
     }
     
-    static func action() -> Action<Input, Shop> {
+    static func action() -> Action<Input, ShopGuide> {
         let provider = MoyaProvider<KaikaiAPI>(stubClosure: { _ -> StubBehavior in
             .never
         })
@@ -31,7 +30,7 @@ struct GetShopDataGatewayAction: DataGatewayAction {
                 .do(onSuccess: { response in
                     print(response)
                 })
-                .map(Shop.self, using: decoder)
+                .map(ShopGuide.self, using: decoder)
                 .debug()
                 .asObservable()
         }
@@ -39,8 +38,8 @@ struct GetShopDataGatewayAction: DataGatewayAction {
     
 }
 
-extension GetShopDataGatewayAction: DataGatewayMockable {
-    static func mock() -> Action<Input, Shop> {
+extension GetShopGuideDataGatewayAction: DataGatewayMockable {
+    static func mock() -> Action<Input, ShopGuide> {
         let provider = MoyaProvider<KaikaiAPI>(stubClosure: { _ -> StubBehavior in
             .delayed(seconds: 2)
         })
@@ -50,13 +49,16 @@ extension GetShopDataGatewayAction: DataGatewayMockable {
             decoder.keyDecodingStrategy = .convertFromSnakeCase
             return provider.rx
                 .request(.getShop(shopId: input.shopId, tableId: input.tableId, deviceId: input.deviceId))
+                .map { data in
+                    print(try! JSONSerialization.jsonObject(with: data.data, options: []))
+                    return data
+                }
                 .do(onSuccess: { response in
                     print(response)
                 })
-                .map(Shop.self, using: decoder)
+                .map(ShopGuide.self, using: decoder)
                 .debug()
                 .asObservable()
         }
     }
 }
-
